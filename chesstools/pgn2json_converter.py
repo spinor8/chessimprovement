@@ -62,7 +62,7 @@ def serialize_moves(node):
             var_annotations = {}
             if var_node.comment:
                 var_annotations["comment"] = var_node.comment
-            var_color = "white" if var_board.turn == chess.WHITE else "black"
+            var_color = "w" if var_board.turn == chess.WHITE else "b"
             var_moves = [{
                 "san": var_san,
                 "move_number": var_move_number,
@@ -78,7 +78,7 @@ def serialize_moves(node):
         move_obj = {
             "san": san,
             "move_number": move_number,
-            "color": "white" if board.turn == chess.WHITE else "black",
+            "color": "w" if board.turn == chess.WHITE else "b",
             "annotations": annotations,
             "variations": variations
         }
@@ -117,8 +117,8 @@ def build_pgn_moves(moves_list):
     for move_obj in moves_list:
         san = move_obj["san"]
         move_number = move_obj["move_number"]
-        color = move_obj.get("color", "white")
-        if color == "white":
+        color = move_obj.get("color", "w")
+        if color == "w":
             text += f"{move_number}. {san} "
         else:
             text += f"{san} "

@@ -16,7 +16,7 @@
       {
         "san": "d4",
         "move_number": 1,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:47.4]"
         },
@@ -25,7 +25,7 @@
       {
         "san": "g6",
         "move_number": 1,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:49.9]"
         },
@@ -34,7 +34,7 @@
       {
         "san": "e4",
         "move_number": 2,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:46.3]"
         },
@@ -43,7 +43,7 @@
       {
         "san": "c5",
         "move_number": 2,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:50.7]"
         },
@@ -52,7 +52,7 @@
       {
         "san": "dxc5",
         "move_number": 3,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:45.2]"
         },
@@ -61,7 +61,7 @@
       {
         "san": "Bg7",
         "move_number": 3,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:50.4]"
         },
@@ -70,7 +70,7 @@
       {
         "san": "Nc3",
         "move_number": 4,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:42.7]"
         },
@@ -79,7 +79,7 @@
       {
         "san": "Qa5",
         "move_number": 4,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:49.8]"
         },
@@ -88,7 +88,7 @@
       {
         "san": "Bd2",
         "move_number": 5,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:30.6]"
         },
@@ -97,7 +97,7 @@
       {
         "san": "Qxc5",
         "move_number": 5,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:49.7]"
         },
@@ -106,7 +106,7 @@
       {
         "san": "Nd5",
         "move_number": 6,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:29.1]"
         },
@@ -115,7 +115,7 @@
       {
         "san": "e6",
         "move_number": 6,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:42.5]"
         },
@@ -124,7 +124,7 @@
       {
         "san": "Bb4",
         "move_number": 7,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:28.1]"
         },
@@ -133,7 +133,7 @@
       {
         "san": "Qc6",
         "move_number": 7,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:36.6]"
         },
@@ -142,7 +142,7 @@
       {
         "san": "Bb5",
         "move_number": 8,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:26.8]"
         },
@@ -151,7 +151,7 @@
       {
         "san": "Qxb5",
         "move_number": 8,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:32.1]"
         },
@@ -160,7 +160,7 @@
       {
         "san": "Nc7+",
         "move_number": 9,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:25.7]"
         },
@@ -169,7 +169,7 @@
       {
         "san": "Kd8",
         "move_number": 9,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:32.8]"
         },
@@ -178,7 +178,7 @@
       {
         "san": "Nxb5",
         "move_number": 10,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:24.4]"
         },

@@ -82,6 +82,11 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
           "type": "integer",
           "description": "Move number in the game"
         },
+        "color": {
+          "type": "string",
+          "description": "Color of the player making the move",
+          "enum": ["w", "b"]
+        },
         "annotations": {
           "type": "object",
           "description": "Annotations for the move",
@@ -137,6 +142,7 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
     {
       "san": "d4",
       "move_number": 1,
+      "color": "w",
       "annotations": {
         "comment": "Main line",
         "eval": "+0.20",
@@ -149,6 +155,7 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
             {
               "san": "Nf6",
               "move_number": 1,
+              "color": "b",
               "annotations": {
                 "comment": "Standard reply",
                 "eval": "+0.15"
@@ -162,6 +169,7 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
     {
       "san": "c4",
       "move_number": 2,
+      "color": "w",
       "annotations": {},
       "variations": []
     }
@@ -207,7 +215,7 @@ Recursively serializes the move tree from a PGN game node.
 - **Features**:
   - Handles mainline moves and variations
   - Extracts comments and parses engine evaluations (`[%eval ...]`)
-  - Assigns move numbers and colors ("white" or "black")
+  - Assigns move numbers and colors ("w" or "b")
   - Recursively processes nested variations
 
 #### `convert_pgn_to_json(input_file, output_file)`

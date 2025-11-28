@@ -71,5 +71,5 @@ def main(base_dir):
 
 
 if __name__ == "__main__":
-    base_location = os.path.abspath(os.path.dirname(__file__))
+    base_location = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     main(base_location)

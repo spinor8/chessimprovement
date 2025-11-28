@@ -121,12 +121,26 @@ def build_pgn_moves(moves_list):
         if color == "white":
             text += f"{move_number}. {san} "
         else:
-            text += f"{move_number}... {san} "
+            text += f"{san} "
         if move_obj.get("annotations", {}).get("comment"):
             text += f"{{{move_obj['annotations']['comment']}}} "
         for var in move_obj.get("variations", []):
             text += f"( {build_pgn_moves(var['line'])} ) "
     return text.strip()
+
+def convert(file_path):
+    """Wrapper function to convert a single file based on its extension.
+    .pgn -> .json
+    .json -> _converted.pgn
+    """
+    if file_path.lower().endswith(".pgn"):
+        output_path = file_path.replace(".pgn", ".json")
+        convert_pgn_to_json(file_path, output_path)
+    elif file_path.lower().endswith(".json"):
+        output_path = file_path.replace(".json", "_converted.pgn")
+        convert_json_to_pgn(file_path, output_path)
+    else:
+        print(f"Unsupported file type: {file_path}")
 
 def convert_json_to_pgn(input_file, output_file):
     with open(input_file, "r", encoding="utf-8") as f:
@@ -170,6 +184,6 @@ def main(base_dir, mode="pgn2json"):
                     convert_json_to_pgn(input_path, output_path)
 
 if __name__ == "__main__":
-    mode = 'json2pgn'
+    mode = 'pgn2json'
     base_location = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     main(base_location, mode)

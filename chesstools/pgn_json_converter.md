@@ -1,3 +1,4 @@
+
 # 📐 JSON Schema for Chess Game Archives
 
 ## 1. Motivation
@@ -81,11 +82,6 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
           "type": "integer",
           "description": "Move number in the game"
         },
-        "color": {
-          "type": "string",
-          "enum": ["white", "black"],
-          "description": "Color of the player making the move"
-        },
         "annotations": {
           "type": "object",
           "description": "Annotations for the move",
@@ -114,7 +110,7 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
           }
         }
       },
-      "required": ["san", "move_number", "color"]
+      "required": ["san", "move_number"]
     }
   }
 }
@@ -141,7 +137,6 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
     {
       "san": "d4",
       "move_number": 1,
-      "color": "white",
       "annotations": {
         "comment": "Main line",
         "eval": "+0.20",
@@ -154,7 +149,6 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
             {
               "san": "Nf6",
               "move_number": 1,
-              "color": "black",
               "annotations": {
                 "comment": "Standard reply",
                 "eval": "+0.15"
@@ -168,7 +162,6 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
     {
       "san": "c4",
       "move_number": 2,
-      "color": "white",
       "annotations": {},
       "variations": []
     }

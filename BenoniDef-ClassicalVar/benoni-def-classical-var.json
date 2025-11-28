@@ -1,0 +1,831 @@
+[
+  {
+    "game_id": "Training_2025.11.29",
+    "metadata": {
+      "event": "Training",
+      "site": "EC",
+      "date": "2025.11.29",
+      "round": "?",
+      "white": "Stockfish",
+      "black": "SPN",
+      "result": "1-0",
+      "time_control": "180+2"
+    },
+    "moves": [
+      {
+        "san": "d4",
+        "move_number": 1,
+        "annotations": {
+          "comment": "[%eval +0.25]",
+          "eval": "+0.25"
+        },
+        "variations": []
+      },
+      {
+        "san": "Nf6",
+        "move_number": 1,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "c4",
+        "move_number": 2,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "c5",
+        "move_number": 2,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "d5",
+        "move_number": 3,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "e6",
+        "move_number": 3,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Nc3",
+        "move_number": 4,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "exd5",
+        "move_number": 4,
+        "annotations": {
+          "comment": "[%eval +0.87]",
+          "eval": "+0.87"
+        },
+        "variations": []
+      },
+      {
+        "san": "cxd5",
+        "move_number": 5,
+        "annotations": {
+          "comment": "[%eval +0.79]",
+          "eval": "+0.79"
+        },
+        "variations": []
+      },
+      {
+        "san": "d6",
+        "move_number": 5,
+        "annotations": {
+          "comment": "[%eval +0.91] At this point, it's already +1.0 according to StockFish and +0.9 according to Leela.",
+          "eval": "+0.91"
+        },
+        "variations": []
+      },
+      {
+        "san": "e4",
+        "move_number": 6,
+        "annotations": {
+          "comment": "[%eval +0.86]",
+          "eval": "+0.86"
+        },
+        "variations": []
+      },
+      {
+        "san": "g6",
+        "move_number": 6,
+        "annotations": {
+          "comment": "[%eval +0.94]",
+          "eval": "+0.94"
+        },
+        "variations": []
+      },
+      {
+        "san": "f4",
+        "move_number": 7,
+        "annotations": {
+          "comment": "[%eval +0.91]",
+          "eval": "+0.91"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bg7",
+        "move_number": 7,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Bb5+",
+        "move_number": 8,
+        "annotations": {
+          "comment": "[%eval +0.88]",
+          "eval": "+0.88"
+        },
+        "variations": []
+      },
+      {
+        "san": "Nbd7",
+        "move_number": 8,
+        "annotations": {},
+        "variations": [
+          {
+            "label": "",
+            "line": [
+              {
+                "san": "a4",
+                "move_number": 9,
+                "annotations": {
+                  "comment": "[%eval +0.89]",
+                  "eval": "+0.89"
+                },
+                "variations": []
+              },
+              {
+                "san": "Na6",
+                "move_number": 9,
+                "annotations": {},
+                "variations": []
+              },
+              {
+                "san": "Nf3",
+                "move_number": 10,
+                "annotations": {},
+                "variations": []
+              },
+              {
+                "san": "Nb4",
+                "move_number": 10,
+                "annotations": {
+                  "comment": "[%eval +0.93]",
+                  "eval": "+0.93"
+                },
+                "variations": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "san": "e5",
+        "move_number": 9,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "dxe5",
+        "move_number": 9,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "fxe5",
+        "move_number": 10,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Nxd5",
+        "move_number": 10,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Qxd5",
+        "move_number": 11,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "O-O",
+        "move_number": 11,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Bxd7",
+        "move_number": 12,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Bxd7",
+        "move_number": 12,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Nf3",
+        "move_number": 13,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Bc6",
+        "move_number": 13,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Qxd8",
+        "move_number": 14,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Raxd8",
+        "move_number": 14,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Bg5",
+        "move_number": 15,
+        "annotations": {},
+        "variations": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "game_id": "Training_2025.11.29",
+    "metadata": {
+      "event": "Training",
+      "site": "EC",
+      "date": "2025.11.29",
+      "round": "?",
+      "white": "Stockfish",
+      "black": "SPN",
+      "result": "1-0",
+      "orientation": "black",
+      "time_control": "180+2"
+    },
+    "moves": [
+      {
+        "san": "d4",
+        "move_number": 1,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Nf6",
+        "move_number": 1,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "c4",
+        "move_number": 2,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "c5",
+        "move_number": 2,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "d5",
+        "move_number": 3,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "e6",
+        "move_number": 3,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Nc3",
+        "move_number": 4,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "exd5",
+        "move_number": 4,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "cxd5",
+        "move_number": 5,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "d6",
+        "move_number": 5,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "e4",
+        "move_number": 6,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "g6",
+        "move_number": 6,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "f4",
+        "move_number": 7,
+        "annotations": {
+          "comment": "[%clk 0:02:46.9]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bg7",
+        "move_number": 7,
+        "annotations": {
+          "comment": "[%clk 0:02:57.3]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bb5+",
+        "move_number": 8,
+        "annotations": {
+          "comment": "[%clk 0:02:44.8]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Nbd7",
+        "move_number": 8,
+        "annotations": {
+          "comment": "[%clk 0:02:54.5]"
+        },
+        "variations": []
+      },
+      {
+        "san": "e5",
+        "move_number": 9,
+        "annotations": {
+          "comment": "[%clk 0:02:43.5]"
+        },
+        "variations": []
+      },
+      {
+        "san": "dxe5",
+        "move_number": 9,
+        "annotations": {
+          "comment": "[%clk 0:02:45.5]"
+        },
+        "variations": []
+      },
+      {
+        "san": "fxe5",
+        "move_number": 10,
+        "annotations": {
+          "comment": "[%clk 0:02:41.4]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Nxd5",
+        "move_number": 10,
+        "annotations": {
+          "comment": "[%clk 0:02:42.1]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Qxd5",
+        "move_number": 11,
+        "annotations": {
+          "comment": "[%clk 0:02:39.7]"
+        },
+        "variations": []
+      },
+      {
+        "san": "O-O",
+        "move_number": 11,
+        "annotations": {
+          "comment": "[%clk 0:02:43]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bxd7",
+        "move_number": 12,
+        "annotations": {
+          "comment": "[%clk 0:02:37.4]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bxd7",
+        "move_number": 12,
+        "annotations": {
+          "comment": "[%clk 0:02:42.7]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Nf3",
+        "move_number": 13,
+        "annotations": {
+          "comment": "[%clk 0:02:34.2]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bc6",
+        "move_number": 13,
+        "annotations": {
+          "comment": "[%clk 0:02:42.3]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Qxd8",
+        "move_number": 14,
+        "annotations": {
+          "comment": "[%clk 0:02:32.4]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Raxd8",
+        "move_number": 14,
+        "annotations": {
+          "comment": "[%clk 0:02:43.1]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bg5",
+        "move_number": 15,
+        "annotations": {
+          "comment": "[%clk 0:02:30.7]"
+        },
+        "variations": []
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "game_id": "Training_2025.11.29",
+    "metadata": {
+      "event": "Training",
+      "site": "EC",
+      "date": "2025.11.29",
+      "round": "?",
+      "white": "Leela Chess Zero",
+      "black": "SPN",
+      "result": "1-0",
+      "orientation": "black",
+      "whitetimecontrol": "60+2",
+      "blacktimecontrol": "180+2"
+    },
+    "moves": [
+      {
+        "san": "d4",
+        "move_number": 1,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Nf6",
+        "move_number": 1,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "c4",
+        "move_number": 2,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "c5",
+        "move_number": 2,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "d5",
+        "move_number": 3,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "e6",
+        "move_number": 3,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "Nc3",
+        "move_number": 4,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "exd5",
+        "move_number": 4,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "cxd5",
+        "move_number": 5,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "d6",
+        "move_number": 5,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "e4",
+        "move_number": 6,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "g6",
+        "move_number": 6,
+        "annotations": {},
+        "variations": []
+      },
+      {
+        "san": "f4",
+        "move_number": 7,
+        "annotations": {
+          "comment": "[%clk 0:00:49.1]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bg7",
+        "move_number": 7,
+        "annotations": {
+          "comment": "[%clk 0:02:58.9]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bb5+",
+        "move_number": 8,
+        "annotations": {
+          "comment": "[%clk 0:00:50.8]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Kf8",
+        "move_number": 8,
+        "annotations": {
+          "comment": "[%clk 0:02:57.8]"
+        },
+        "variations": []
+      },
+      {
+        "san": "e5",
+        "move_number": 9,
+        "annotations": {
+          "comment": "[%clk 0:00:46.4]"
+        },
+        "variations": []
+      },
+      {
+        "san": "dxe5",
+        "move_number": 9,
+        "annotations": {
+          "comment": "[%clk 0:02:57.3]"
+        },
+        "variations": []
+      },
+      {
+        "san": "fxe5",
+        "move_number": 10,
+        "annotations": {
+          "comment": "[%clk 0:00:44.1]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Ng4",
+        "move_number": 10,
+        "annotations": {
+          "comment": "[%clk 0:02:58.1]"
+        },
+        "variations": []
+      },
+      {
+        "san": "e6",
+        "move_number": 11,
+        "annotations": {
+          "comment": "[%clk 0:00:42.9]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Nf6",
+        "move_number": 11,
+        "annotations": {
+          "comment": "[%clk 0:02:55.8]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Nh3",
+        "move_number": 12,
+        "annotations": {
+          "comment": "[%clk 0:00:41.5]"
+        },
+        "variations": []
+      },
+      {
+        "san": "a6",
+        "move_number": 12,
+        "annotations": {
+          "comment": "[%clk 0:02:52.9]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Be2",
+        "move_number": 13,
+        "annotations": {
+          "comment": "[%clk 0:00:43.3]"
+        },
+        "variations": []
+      },
+      {
+        "san": "fxe6",
+        "move_number": 13,
+        "annotations": {
+          "comment": "[%clk 0:02:49.1]"
+        },
+        "variations": []
+      },
+      {
+        "san": "O-O",
+        "move_number": 14,
+        "annotations": {
+          "comment": "[%clk 0:00:45]"
+        },
+        "variations": []
+      },
+      {
+        "san": "exd5",
+        "move_number": 14,
+        "annotations": {
+          "comment": "[%clk 0:02:47.4]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Nxd5",
+        "move_number": 15,
+        "annotations": {
+          "comment": "[%clk 0:00:41]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Be6",
+        "move_number": 15,
+        "annotations": {
+          "comment": "[%clk 0:02:45.7]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Nxf6",
+        "move_number": 16,
+        "annotations": {
+          "comment": "[%clk 0:00:38.6]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Qxd1",
+        "move_number": 16,
+        "annotations": {
+          "comment": "[%clk 0:02:44.2]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bxd1",
+        "move_number": 17,
+        "annotations": {
+          "comment": "[%clk 0:00:40.3]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bxf6",
+        "move_number": 17,
+        "annotations": {
+          "comment": "[%clk 0:02:44.2]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Rxf6+",
+        "move_number": 18,
+        "annotations": {
+          "comment": "[%clk 0:00:37.4]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Ke7",
+        "move_number": 18,
+        "annotations": {
+          "comment": "[%clk 0:02:45]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bg5",
+        "move_number": 19,
+        "annotations": {
+          "comment": "[%clk 0:00:31.3]"
+        },
+        "variations": []
+      },
+      {
+        "san": "h6",
+        "move_number": 19,
+        "annotations": {
+          "comment": "[%clk 0:02:44.9]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Nf4",
+        "move_number": 20,
+        "annotations": {
+          "comment": "[%clk 0:00:33.1]"
+        },
+        "variations": []
+      },
+      {
+        "san": "hxg5",
+        "move_number": 20,
+        "annotations": {
+          "comment": "[%clk 0:02:44.6]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Rxe6+",
+        "move_number": 21,
+        "annotations": {
+          "comment": "[%clk 0:00:34.9]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Kf7",
+        "move_number": 21,
+        "annotations": {
+          "comment": "[%clk 0:02:44.2]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bb3",
+        "move_number": 22,
+        "annotations": {
+          "comment": "[%clk 0:00:33.2]"
+        },
+        "variations": []
+      },
+      {
+        "san": "gxf4",
+        "move_number": 22,
+        "annotations": {
+          "comment": "[%clk 0:02:42.7]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Rxa6+",
+        "move_number": 23,
+        "annotations": {
+          "comment": "[%clk 0:00:35]"
+        },
+        "variations": []
+      }
+    ],
+    "notes": ""
+  }
+]

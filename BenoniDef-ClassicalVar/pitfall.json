@@ -1,0 +1,171 @@
+[
+  {
+    "game_id": "Training_2025.11.29",
+    "metadata": {
+      "event": "Training",
+      "site": "EC",
+      "date": "2025.11.29",
+      "round": "?",
+      "white": "Stockfish",
+      "black": "SPN",
+      "result": "1-0",
+      "orientation": "black",
+      "time_control": "180+2"
+    },
+    "moves": [
+      {
+        "san": "d4",
+        "move_number": 1,
+        "annotations": {
+          "comment": "[%clk 0:02:47.4]"
+        },
+        "variations": []
+      },
+      {
+        "san": "g6",
+        "move_number": 1,
+        "annotations": {
+          "comment": "[%clk 0:02:49.9]"
+        },
+        "variations": []
+      },
+      {
+        "san": "e4",
+        "move_number": 2,
+        "annotations": {
+          "comment": "[%clk 0:02:46.3]"
+        },
+        "variations": []
+      },
+      {
+        "san": "c5",
+        "move_number": 2,
+        "annotations": {
+          "comment": "[%clk 0:02:50.7]"
+        },
+        "variations": []
+      },
+      {
+        "san": "dxc5",
+        "move_number": 3,
+        "annotations": {
+          "comment": "[%clk 0:02:45.2]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bg7",
+        "move_number": 3,
+        "annotations": {
+          "comment": "[%clk 0:02:50.4]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Nc3",
+        "move_number": 4,
+        "annotations": {
+          "comment": "[%clk 0:02:42.7]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Qa5",
+        "move_number": 4,
+        "annotations": {
+          "comment": "[%clk 0:02:49.8]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bd2",
+        "move_number": 5,
+        "annotations": {
+          "comment": "[%clk 0:02:30.6]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Qxc5",
+        "move_number": 5,
+        "annotations": {
+          "comment": "[%clk 0:02:49.7]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Nd5",
+        "move_number": 6,
+        "annotations": {
+          "comment": "[%clk 0:02:29.1]"
+        },
+        "variations": []
+      },
+      {
+        "san": "e6",
+        "move_number": 6,
+        "annotations": {
+          "comment": "[%clk 0:02:42.5]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bb4",
+        "move_number": 7,
+        "annotations": {
+          "comment": "[%clk 0:02:28.1]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Qc6",
+        "move_number": 7,
+        "annotations": {
+          "comment": "[%clk 0:02:36.6]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bb5",
+        "move_number": 8,
+        "annotations": {
+          "comment": "[%clk 0:02:26.8]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Qxb5",
+        "move_number": 8,
+        "annotations": {
+          "comment": "[%clk 0:02:32.1]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Nc7+",
+        "move_number": 9,
+        "annotations": {
+          "comment": "[%clk 0:02:25.7]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Kd8",
+        "move_number": 9,
+        "annotations": {
+          "comment": "[%clk 0:02:32.8]"
+        },
+        "variations": []
+      },
+      {
+        "san": "Nxb5",
+        "move_number": 10,
+        "annotations": {
+          "comment": "[%clk 0:02:24.4]"
+        },
+        "variations": []
+      }
+    ],
+    "notes": ""
+  }
+]

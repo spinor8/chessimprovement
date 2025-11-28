@@ -1,0 +1,37 @@
+[Event "Training"]
+[Site "EC"]
+[Date "2025.11.29"]
+[Round "?"]
+[White "Leela Chess Zero"]
+[Black "SPN"]
+[Result "1-0"]
+[Orientation "black"]
+[WhiteTimeControl "60+2"]
+[BlackTimeControl "180+2"]
+
+1. d4 Nf6 2. c4 c5 3. d5 e6 4. Nc3 exd5 5. cxd5 d6 6. e4 g6 7. Nf3 {[%eval +0.55] } Bg7 {[%eval +0.70] } 8. Nd2 {[%eval +0.66] [%clk 0:02:55.6] } O-O {[%eval +0.67] [%clk 0:00:59.1] } 9. Be2 {[%eval +0.73] [%clk 0:02:44.5] } Nbd7 {[%eval +0.76] [%clk 0:00:55.6] } 10. h3 {[%eval +0.86] [%clk 0:02:24.1] } a6 {[%eval +0.91] [%clk 0:00:52.9] } 11. a4 {[%eval +0.91] [%clk 0:02:22.7] } Rb8 {[%eval +0.99] [%clk 0:00:53.7] } 12. O-O {[%eval +0.97] [%clk 0:02:20.9] } Re8 {[%eval +0.95] [%clk 0:00:49.9] } 13. Re1 {[%eval +0.90] [%clk 0:02:17.9] } Ne5 {[%eval +0.98] [%clk 0:00:38] } 14. f4 {[%eval +0.96] [%clk 0:02:14.4] } Ned7 {[%eval +0.99] [%clk 0:00:38] } 15. Bc4 {[%eval +0.99] [%clk 0:02:16.2] } Nh5 {[%eval +1.26] [%clk 0:00:35.6] } 16. Nf3 {[%eval +1.15] [%clk 0:02:17.9] } b5 {[%eval +1.18] [%clk 0:00:32.9] } 17. axb5 {[%eval +1.16] [%clk 0:02:10.2] } axb5 {[%eval +1.79] [%clk 0:00:33.5] } 18. Nxb5 {[%eval +1.92] [%clk 0:02:04.5] } Nb6 {[%eval +1.84] [%clk 0:00:33.2] } 19. Bf1 {[%eval +1.87] [%clk 0:02:06.3] } f5 {[%eval +4.24] [%clk 0:00:29.2] } 20. e5 {[%eval +3.29] [%clk 0:01:58.6] } dxe5 {[%eval +3.11] [%clk 0:00:25.6] } 21. fxe5 {[%eval +3.29] [%clk 0:01:56.7] } Qxd5 {[%eval +10.29] [%clk 0:00:23.6] } 22. Qxd5+ {[%eval +4.51] [%clk 0:01:50.9] } Nxd5 {[%eval +4.63] [%clk 0:00:24.4] } 23. Nd6 {[%eval +4.51] [%clk 0:01:50] } Rd8 {[%eval +5.25] [%clk 0:00:20.9] } 24. Bc4 {[%eval +5.34] [%clk 0:01:43.9] } Be6 {[%eval +5.97] [%clk 0:00:21.6] } 25. Ng5 {[%eval +5.90] [%clk 0:01:42.7] } Rxd6 {[%eval +31.06] [%clk 0:00:01.6] } 26. exd6 {[%eval +5.97] [%clk 0:01:37] } 1-0
+
+[Event "Training"]
+[Site "EC"]
+[Date "2025.11.29"]
+[Round "?"]
+[White "Stockfish"]
+[Black "SPN"]
+[Result "1-0"]
+[Orientation "black"]
+[TimeControl "180+2"]
+
+1. d4 Nf6 2. c4 c5 3. d5 e6 4. Nc3 exd5 5. cxd5 d6 6. e4 g6 7. f4 {[%clk 0:02:46.9] } Bg7 {[%clk 0:02:57.3] } 8. Bb5+ {[%clk 0:02:44.8] } Nbd7 {[%clk 0:02:54.5] } 9. e5 {[%clk 0:02:43.5] } dxe5 {[%clk 0:02:45.5] } 10. fxe5 {[%clk 0:02:41.4] } Nxd5 {[%clk 0:02:42.1] } 11. Qxd5 {[%clk 0:02:39.7] } O-O {[%clk 0:02:43] } 12. Bxd7 {[%clk 0:02:37.4] } Bxd7 {[%clk 0:02:42.7] } 13. Nf3 {[%clk 0:02:34.2] } Bc6 {[%clk 0:02:42.3] } 14. Qxd8 {[%clk 0:02:32.4] } Raxd8 {[%clk 0:02:43.1] } 15. Bg5 {[%clk 0:02:30.7] } 1-0
+
+[Event "Training"]
+[Site "EC"]
+[Date "2025.11.29"]
+[Round "?"]
+[White "Leela Chess Zero"]
+[Black "SPN"]
+[Result "*"]
+[Orientation "black"]
+[WhiteTimeControl "60+2"]
+[BlackTimeControl "180+2"]
+
+1. d4 Nf6 2. c4 c5 3. d5 e6 4. Nc3 exd5 5. cxd5 d6 6. e4 g6 7. f4 {[%clk 0:00:49.1] } Bg7 {[%clk 0:02:58.9] } 8. Bb5+ {[%clk 0:00:50.8] } Kf8 {[%clk 0:02:57.8] } 9. e5 {[%clk 0:00:46.4] } dxe5 {[%clk 0:02:57.3] } 10. fxe5 {[%clk 0:00:44.1] } Ng4 {[%clk 0:02:58.1] } 11. e6 {[%clk 0:00:42.9] } Nf6 {[%clk 0:02:55.8] } 12. Nh3 {[%clk 0:00:41.5] } a6 {[%clk 0:02:52.9] } 13. Be2 {[%clk 0:00:43.3] } fxe6 {[%clk 0:02:49.1] } 14. O-O {[%clk 0:00:45] } exd5 {[%clk 0:02:47.4] } 15. Nxd5 {[%clk 0:00:41] } Be6 {[%clk 0:02:45.7] } 16. Nxf6 {[%clk 0:00:38.6] } Qxd1 {[%clk 0:02:44.2] } 17. Bxd1 {[%clk 0:00:40.3] } Bxf6 {[%clk 0:02:44.2] } 18. Rxf6+ {[%clk 0:00:37.4] } Ke7 {[%clk 0:02:45] } 19. Bg5 {[%clk 0:00:31.3] } h6 {[%clk 0:02:44.9] } 20. Nf4 {[%clk 0:00:33.1] } hxg5 {[%clk 0:02:44.6] } 21. Rxe6+ {[%clk 0:00:34.9] } Kf7 {[%clk 0:02:44.2] } 22. Bb3 {[%clk 0:00:33.2] } gxf4 {[%clk 0:02:42.7] } 23. Rxa6+ {[%clk 0:00:35] } 1-0

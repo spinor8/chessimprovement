@@ -15,7 +15,7 @@
       {
         "san": "d4",
         "move_number": 1,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%eval +0.25]",
           "eval": "+0.25"
@@ -25,49 +25,49 @@
       {
         "san": "Nf6",
         "move_number": 1,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "c4",
         "move_number": 2,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "c5",
         "move_number": 2,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "d5",
         "move_number": 3,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "e6",
         "move_number": 3,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Nc3",
         "move_number": 4,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "exd5",
         "move_number": 4,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%eval +0.87]",
           "eval": "+0.87"
@@ -77,7 +77,7 @@
       {
         "san": "cxd5",
         "move_number": 5,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%eval +0.79]",
           "eval": "+0.79"
@@ -87,7 +87,7 @@
       {
         "san": "d6",
         "move_number": 5,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%eval +0.91] At this point, it's already +1.0 according to StockFish and +0.9 according to Leela.",
           "eval": "+0.91"
@@ -97,7 +97,7 @@
       {
         "san": "e4",
         "move_number": 6,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%eval +0.86]",
           "eval": "+0.86"
@@ -107,7 +107,7 @@
       {
         "san": "g6",
         "move_number": 6,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%eval +0.94]",
           "eval": "+0.94"
@@ -117,7 +117,7 @@
       {
         "san": "f4",
         "move_number": 7,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%eval +0.91]",
           "eval": "+0.91"
@@ -127,14 +127,14 @@
       {
         "san": "Bg7",
         "move_number": 7,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Bb5+",
         "move_number": 8,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%eval +0.88]",
           "eval": "+0.88"
@@ -144,7 +144,7 @@
       {
         "san": "Nbd7",
         "move_number": 8,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": [
           {
@@ -153,7 +153,7 @@
               {
                 "san": "Nfd7",
                 "move_number": 8,
-                "color": "black",
+                "color": "b",
                 "annotations": {
                   "comment": "[%eval +0.92]"
                 },
@@ -162,7 +162,7 @@
               {
                 "san": "a4",
                 "move_number": 9,
-                "color": "white",
+                "color": "w",
                 "annotations": {
                   "comment": "[%eval +0.89]",
                   "eval": "+0.89"
@@ -172,21 +172,21 @@
               {
                 "san": "Na6",
                 "move_number": 9,
-                "color": "black",
+                "color": "b",
                 "annotations": {},
                 "variations": []
               },
               {
                 "san": "Nf3",
                 "move_number": 10,
-                "color": "white",
+                "color": "w",
                 "annotations": {},
                 "variations": []
               },
               {
                 "san": "Nb4",
                 "move_number": 10,
-                "color": "black",
+                "color": "b",
                 "annotations": {
                   "comment": "[%eval +0.93]",
                   "eval": "+0.93"
@@ -200,91 +200,91 @@
       {
         "san": "e5",
         "move_number": 9,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "dxe5",
         "move_number": 9,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "fxe5",
         "move_number": 10,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Nxd5",
         "move_number": 10,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Qxd5",
         "move_number": 11,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "O-O",
         "move_number": 11,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Bxd7",
         "move_number": 12,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Bxd7",
         "move_number": 12,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Nf3",
         "move_number": 13,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Bc6",
         "move_number": 13,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Qxd8",
         "move_number": 14,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Raxd8",
         "move_number": 14,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Bg5",
         "move_number": 15,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       }
@@ -308,91 +308,91 @@
       {
         "san": "d4",
         "move_number": 1,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Nf6",
         "move_number": 1,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "c4",
         "move_number": 2,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "c5",
         "move_number": 2,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "d5",
         "move_number": 3,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "e6",
         "move_number": 3,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Nc3",
         "move_number": 4,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "exd5",
         "move_number": 4,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "cxd5",
         "move_number": 5,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "d6",
         "move_number": 5,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "e4",
         "move_number": 6,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "g6",
         "move_number": 6,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "f4",
         "move_number": 7,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:46.9]"
         },
@@ -401,7 +401,7 @@
       {
         "san": "Bg7",
         "move_number": 7,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:57.3]"
         },
@@ -410,7 +410,7 @@
       {
         "san": "Bb5+",
         "move_number": 8,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:44.8]"
         },
@@ -419,7 +419,7 @@
       {
         "san": "Nbd7",
         "move_number": 8,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:54.5]"
         },
@@ -428,7 +428,7 @@
       {
         "san": "e5",
         "move_number": 9,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:43.5]"
         },
@@ -437,7 +437,7 @@
       {
         "san": "dxe5",
         "move_number": 9,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:45.5]"
         },
@@ -446,7 +446,7 @@
       {
         "san": "fxe5",
         "move_number": 10,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:41.4]"
         },
@@ -455,7 +455,7 @@
       {
         "san": "Nxd5",
         "move_number": 10,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:42.1]"
         },
@@ -464,7 +464,7 @@
       {
         "san": "Qxd5",
         "move_number": 11,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:39.7]"
         },
@@ -473,7 +473,7 @@
       {
         "san": "O-O",
         "move_number": 11,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:43]"
         },
@@ -482,7 +482,7 @@
       {
         "san": "Bxd7",
         "move_number": 12,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:37.4]"
         },
@@ -491,7 +491,7 @@
       {
         "san": "Bxd7",
         "move_number": 12,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:42.7]"
         },
@@ -500,7 +500,7 @@
       {
         "san": "Nf3",
         "move_number": 13,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:34.2]"
         },
@@ -509,7 +509,7 @@
       {
         "san": "Bc6",
         "move_number": 13,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:42.3]"
         },
@@ -518,7 +518,7 @@
       {
         "san": "Qxd8",
         "move_number": 14,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:32.4]"
         },
@@ -527,7 +527,7 @@
       {
         "san": "Raxd8",
         "move_number": 14,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:43.1]"
         },
@@ -536,7 +536,7 @@
       {
         "san": "Bg5",
         "move_number": 15,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:02:30.7]"
         },
@@ -563,91 +563,91 @@
       {
         "san": "d4",
         "move_number": 1,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Nf6",
         "move_number": 1,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "c4",
         "move_number": 2,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "c5",
         "move_number": 2,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "d5",
         "move_number": 3,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "e6",
         "move_number": 3,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "Nc3",
         "move_number": 4,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "exd5",
         "move_number": 4,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "cxd5",
         "move_number": 5,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "d6",
         "move_number": 5,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "e4",
         "move_number": 6,
-        "color": "white",
+        "color": "w",
         "annotations": {},
         "variations": []
       },
       {
         "san": "g6",
         "move_number": 6,
-        "color": "black",
+        "color": "b",
         "annotations": {},
         "variations": []
       },
       {
         "san": "f4",
         "move_number": 7,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:49.1]"
         },
@@ -656,7 +656,7 @@
       {
         "san": "Bg7",
         "move_number": 7,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:58.9]"
         },
@@ -665,7 +665,7 @@
       {
         "san": "Bb5+",
         "move_number": 8,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:50.8]"
         },
@@ -674,7 +674,7 @@
       {
         "san": "Kf8",
         "move_number": 8,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:57.8]"
         },
@@ -683,7 +683,7 @@
       {
         "san": "e5",
         "move_number": 9,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:46.4]"
         },
@@ -692,7 +692,7 @@
       {
         "san": "dxe5",
         "move_number": 9,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:57.3]"
         },
@@ -701,7 +701,7 @@
       {
         "san": "fxe5",
         "move_number": 10,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:44.1]"
         },
@@ -710,7 +710,7 @@
       {
         "san": "Ng4",
         "move_number": 10,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:58.1]"
         },
@@ -719,7 +719,7 @@
       {
         "san": "e6",
         "move_number": 11,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:42.9]"
         },
@@ -728,7 +728,7 @@
       {
         "san": "Nf6",
         "move_number": 11,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:55.8]"
         },
@@ -737,7 +737,7 @@
       {
         "san": "Nh3",
         "move_number": 12,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:41.5]"
         },
@@ -746,7 +746,7 @@
       {
         "san": "a6",
         "move_number": 12,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:52.9]"
         },
@@ -755,7 +755,7 @@
       {
         "san": "Be2",
         "move_number": 13,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:43.3]"
         },
@@ -764,7 +764,7 @@
       {
         "san": "fxe6",
         "move_number": 13,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:49.1]"
         },
@@ -773,7 +773,7 @@
       {
         "san": "O-O",
         "move_number": 14,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:45]"
         },
@@ -782,7 +782,7 @@
       {
         "san": "exd5",
         "move_number": 14,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:47.4]"
         },
@@ -791,7 +791,7 @@
       {
         "san": "Nxd5",
         "move_number": 15,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:41]"
         },
@@ -800,7 +800,7 @@
       {
         "san": "Be6",
         "move_number": 15,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:45.7]"
         },
@@ -809,7 +809,7 @@
       {
         "san": "Nxf6",
         "move_number": 16,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:38.6]"
         },
@@ -818,7 +818,7 @@
       {
         "san": "Qxd1",
         "move_number": 16,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:44.2]"
         },
@@ -827,7 +827,7 @@
       {
         "san": "Bxd1",
         "move_number": 17,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:40.3]"
         },
@@ -836,7 +836,7 @@
       {
         "san": "Bxf6",
         "move_number": 17,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:44.2]"
         },
@@ -845,7 +845,7 @@
       {
         "san": "Rxf6+",
         "move_number": 18,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:37.4]"
         },
@@ -854,7 +854,7 @@
       {
         "san": "Ke7",
         "move_number": 18,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:45]"
         },
@@ -863,7 +863,7 @@
       {
         "san": "Bg5",
         "move_number": 19,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:31.3]"
         },
@@ -872,7 +872,7 @@
       {
         "san": "h6",
         "move_number": 19,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:44.9]"
         },
@@ -881,7 +881,7 @@
       {
         "san": "Nf4",
         "move_number": 20,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:33.1]"
         },
@@ -890,7 +890,7 @@
       {
         "san": "hxg5",
         "move_number": 20,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:44.6]"
         },
@@ -899,7 +899,7 @@
       {
         "san": "Rxe6+",
         "move_number": 21,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:34.9]"
         },
@@ -908,7 +908,7 @@
       {
         "san": "Kf7",
         "move_number": 21,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:44.2]"
         },
@@ -917,7 +917,7 @@
       {
         "san": "Bb3",
         "move_number": 22,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:33.2]"
         },
@@ -926,7 +926,7 @@
       {
         "san": "gxf4",
         "move_number": 22,
-        "color": "black",
+        "color": "b",
         "annotations": {
           "comment": "[%clk 0:02:42.7]"
         },
@@ -935,7 +935,7 @@
       {
         "san": "Rxa6+",
         "move_number": 23,
-        "color": "white",
+        "color": "w",
         "annotations": {
           "comment": "[%clk 0:00:35]"
         },

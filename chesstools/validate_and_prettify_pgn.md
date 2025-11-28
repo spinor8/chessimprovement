@@ -16,7 +16,7 @@
 ## Requirements
 
 - Python 3.6+
-- `python-chess` library: Install with `pip install python-chess`
+- `python-chess` library: Install with `pip install python-chess` (imports as `chess`)
 
 ## Usage
 
@@ -80,7 +80,7 @@ Example:
 
 ## Related Tools
 
-- `pgn_json_converter.py`: Converts PGN to JSON for structured storage.
+- `pgn2json_converter.py`: Converts PGN to JSON for structured storage.
 - `chess-with-json.md`: Schema for JSON chess game archives.
 
 ## Testing
@@ -93,7 +93,7 @@ The tools include automated tests to ensure reliability:
 
 ### PGN-JSON Converter Testing
 - **Round-trip Test**: Converts PGN → JSON → PGN and verifies identical output using `pytest`.
-- **Command**: `cd chesstools && python -m pytest test_pgn_json_converter.py -v`
+- **Command**: `cd chesstools && python -m pytest test_pgn2json_converter.py -v`
 - **What it tests**: Parses a sample PGN, converts to JSON, converts back, and compares exported strings for equivalence.
 - **Dependencies**: `pytest`, `python-chess`.
 - **Coverage**: Validates moves, variations, comments, and metadata preservation.

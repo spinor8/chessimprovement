@@ -1,7 +1,7 @@
 import pytest
 import tempfile
 import os
-from pgn_json_converter import convert_pgn_to_json, convert_json_to_pgn
+from chesstools.pgn2json_converter import convert_pgn_to_json, convert_json_to_pgn
 import chess.pgn
 
 def test_round_trip_conversion():

@@ -182,3 +182,171 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
 ---
 
 ✅ With this schema, you can **preserve annotations**, **handle unlimited nesting**, and **validate every commit**. PGN remains your interchange format, but JSON becomes your **source of truth**.
+
+---
+
+## 6. Converter Tool
+
+The `pgn2json_converter.py` script provides bidirectional conversion between PGN and JSON formats, implementing the schema above.
+
+### 6.1 Core Functions
+
+#### `serialize_game(game)`
+Converts a chess.pgn.Game object to the JSON schema format.
+- **Input**: `chess.pgn.Game` object
+- **Output**: Dictionary with `game_id`, `metadata`, `moves`, and `notes`
+- **Process**:
+  - Extracts PGN headers into `metadata`, mapping "TimeControl" to "time_control"
+  - Generates `game_id` from event and date
+  - Calls `serialize_moves()` to build the move tree
+
+#### `serialize_moves(node)`
+Recursively serializes the move tree from a PGN game node.
+- **Input**: `chess.pgn.GameNode` object
+- **Output**: List of move dictionaries
+- **Features**:
+  - Handles mainline moves and variations
+  - Extracts comments and parses engine evaluations (`[%eval ...]`)
+  - Assigns move numbers and colors ("white" or "black")
+  - Recursively processes nested variations
+
+#### `convert_pgn_to_json(input_file, output_file)`
+Converts a PGN file to JSON format.
+- **Input**: Path to PGN file
+- **Output**: Path to JSON file
+- **Process**:
+  - Parses all games in the PGN file using `chess.pgn.read_game()`
+  - Serializes each game using `serialize_game()`
+  - Writes formatted JSON with 2-space indentation
+
+#### `build_pgn_moves(moves_list)`
+Reconstructs PGN move text from the JSON move structure.
+- **Input**: List of move dictionaries from JSON
+- **Output**: String of PGN-formatted moves
+- **Features**:
+  - Adds move numbers only for white moves (standard PGN format)
+  - Includes comments in curly braces `{}`
+  - Handles nested variations in parentheses `()`
+
+#### `convert_json_to_pgn(input_file, output_file)`
+Converts a JSON file back to PGN format.
+- **Input**: Path to JSON file
+- **Output**: Path to PGN file
+- **Process**:
+  - Reads and parses JSON data
+  - Reconstructs PGN headers with proper capitalization
+  - Uses `build_pgn_moves()` to generate move text
+  - Handles multiple games in a single file
+
+#### `convert(file_path)`
+Convenience function for single-file conversion.
+- **Input**: File path (`.pgn` or `.json`)
+- **Output**: Automatically determines output path and calls appropriate converter
+- **Usage**: `convert("game.pgn")` → creates `game.json`
+
+### 6.2 Batch Processing
+
+#### `main(base_dir, mode)`
+Processes all files in a directory tree.
+- **Modes**:
+  - `"pgn2json"`: Converts all `.pgn` files to `.json` (default)
+  - `"json2pgn"`: Converts all `.json` files to `_converted.pgn`
+- **Features**:
+  - Recursively walks directory structure
+  - Skips already processed files (containing "_formatted" or "_converted")
+  - Outputs progress messages
+
+### 6.3 Usage Examples
+
+#### Convert single PGN file to JSON:
+```python
+from pgn2json_converter import convert
+convert("path/to/game.pgn")  # Creates game.json
+```
+
+#### Convert single JSON file to PGN:
+```python
+convert("path/to/game.json")  # Creates game_converted.pgn
+```
+
+#### Batch convert all PGN files in directory:
+```bash
+python pgn2json_converter.py  # Runs in pgn2json mode by default
+```
+
+#### Batch convert all JSON files to PGN:
+```bash
+python json2pgn_converter.py  # Uses json2pgn mode
+```
+
+### 6.4 Dependencies
+
+- `chess` library for PGN parsing and manipulation
+- Standard library: `os`, `json`
+
+### 6.5 File Structure
+
+```
+chesstools/
+├── pgn2json_converter.py    # Main converter script
+├── json2pgn_converter.py    # Batch JSON→PGN converter
+├── test_pgn2json_converter.py  # Unit tests
+└── pgn2json_converter.md    # This documentation
+```
+
+### 6.6 Round-trip Fidelity
+
+The converter maintains high fidelity for:
+- ✅ Move sequences and variations
+- ✅ Comments and annotations
+- ✅ Game metadata and headers
+- ✅ Engine evaluations
+- ⚠️ Some advanced PGN features may need extension
+
+### 6.7 Testing
+
+The tool includes comprehensive tests to ensure conversion accuracy.
+
+#### Running Tests
+
+```bash
+# Install pytest in your Python environment
+pip install pytest
+
+# If using conda, activate your environment first
+conda activate your_env_name
+pip install pytest
+
+# Run all tests
+pytest chesstools/test_pgn2json_converter.py
+
+# Run with verbose output
+pytest chesstools/test_pgn2json_converter.py -v
+
+# Run from the project root directory (parent of chesstools/)
+pytest chesstools/test_pgn2json_converter.py
+
+# Run with verbose output
+pytest chesstools/test_pgn_json_converter.py -v
+
+# Alternative: use python -m pytest
+python -m pytest test_pgn2json_converter.py
+```
+
+#### Test Coverage
+
+The test suite (`test_pgn2json_converter.py`) verifies:
+- **Round-trip conversion**: PGN → JSON → PGN produces equivalent games
+- **Move accuracy**: All moves, variations, and annotations preserved
+- **Header integrity**: Metadata correctly mapped and restored
+- **Parser compatibility**: Output compatible with `chess.pgn` library
+
+#### Test Function
+
+`test_round_trip_conversion()`:
+- Creates a sample PGN string with comments, variations, and evaluations
+- Converts PGN to JSON, then JSON back to PGN
+- Parses both versions and compares using `chess.pgn.StringExporter`
+- Ensures structural equivalence and annotation preservation
+
+Run tests after any code changes to maintain conversion fidelity.

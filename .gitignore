@@ -1,3 +1,2 @@
-# Ignore generated PGN files
-*_converted.pgn
-*_formatted.pgn
+# Ignore PGN files
+*.pgn

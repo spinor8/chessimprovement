@@ -1,0 +1,20 @@
+[Event "Training"]
+[Site "EC"]
+[Date "2025.11.29"]
+[Round "?"]
+[White "Stockfish"]
+[Black "SPN"]
+[Result "1-0"]
+[Orientation "black"]
+[TimeControl "180+2"]
+
+1. d4 g6
+2. e4 c5
+3. dxc5 Bg7
+4. Nc3 Qa5
+5. Bd2 Qxc5
+6. Nd5 e6
+7. Bb4 Qc6
+8. Bb5 Qxb5
+9. Nc7+ Kd8
+10. Nxb5 1-0

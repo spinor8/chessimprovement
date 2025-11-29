@@ -17,6 +17,7 @@
         "san": "d4",
         "move_number": 1,
         "color": "w",
+        "lan": "d2-d4",
         "annotations": {
           "comment": "[%eval +0.21]",
           "eval": "+0.21"
@@ -27,6 +28,7 @@
         "san": "Nf6",
         "move_number": 1,
         "color": "b",
+        "lan": "g8-f6",
         "annotations": {
           "comment": "[%eval +0.35]",
           "eval": "+0.35"
@@ -37,6 +39,7 @@
         "san": "c4",
         "move_number": 2,
         "color": "w",
+        "lan": "c2-c4",
         "annotations": {
           "comment": "[%eval +0.25]",
           "eval": "+0.25"
@@ -47,6 +50,7 @@
         "san": "c5",
         "move_number": 2,
         "color": "b",
+        "lan": "c7-c5",
         "annotations": {
           "comment": "[%eval +0.71]",
           "eval": "+0.71"
@@ -57,6 +61,7 @@
         "san": "d5",
         "move_number": 3,
         "color": "w",
+        "lan": "d4-d5",
         "annotations": {
           "comment": "[%eval +0.68]",
           "eval": "+0.68"
@@ -67,6 +72,7 @@
         "san": "e6",
         "move_number": 3,
         "color": "b",
+        "lan": "e7-e6",
         "annotations": {
           "comment": "[%eval +0.80]",
           "eval": "+0.80"
@@ -77,6 +83,7 @@
         "san": "Nc3",
         "move_number": 4,
         "color": "w",
+        "lan": "b1-c3",
         "annotations": {
           "comment": "[%eval +0.88]",
           "eval": "+0.88"
@@ -87,6 +94,7 @@
         "san": "exd5",
         "move_number": 4,
         "color": "b",
+        "lan": "e6-d5",
         "annotations": {
           "comment": "[%eval +0.80]",
           "eval": "+0.80"
@@ -97,6 +105,7 @@
         "san": "cxd5",
         "move_number": 5,
         "color": "w",
+        "lan": "c4-d5",
         "annotations": {
           "comment": "[%eval +0.82]",
           "eval": "+0.82"
@@ -107,6 +116,7 @@
         "san": "d6",
         "move_number": 5,
         "color": "b",
+        "lan": "d7-d6",
         "annotations": {
           "comment": "[%eval +0.86] At this point, it's already +1.0 according to StockFish and +0.9 according to Leela.",
           "eval": "+0.86"
@@ -117,6 +127,7 @@
         "san": "e4",
         "move_number": 6,
         "color": "w",
+        "lan": "e2-e4",
         "annotations": {
           "comment": "[%eval +0.84]",
           "eval": "+0.84"
@@ -127,6 +138,7 @@
         "san": "g6",
         "move_number": 6,
         "color": "b",
+        "lan": "g7-g6",
         "annotations": {
           "comment": "[%eval +0.87]",
           "eval": "+0.87"
@@ -137,6 +149,7 @@
         "san": "f4",
         "move_number": 7,
         "color": "w",
+        "lan": "f2-f4",
         "annotations": {
           "comment": "[%eval +0.89]",
           "eval": "+0.89"
@@ -147,6 +160,7 @@
         "san": "Bg7",
         "move_number": 7,
         "color": "b",
+        "lan": "f8-g7",
         "annotations": {
           "comment": "[%eval +0.91]",
           "eval": "+0.91"
@@ -157,6 +171,7 @@
         "san": "Bb5+",
         "move_number": 8,
         "color": "w",
+        "lan": "f1-b5",
         "annotations": {
           "comment": "[%eval +0.92]",
           "eval": "+0.92"
@@ -167,6 +182,7 @@
         "san": "Nbd7",
         "move_number": 8,
         "color": "b",
+        "lan": "b8-d7",
         "annotations": {
           "comment": "[%eval +1.84]",
           "eval": "+1.84"
@@ -179,6 +195,7 @@
                 "san": "Nfd7",
                 "move_number": 8,
                 "color": "b",
+                "lan": "f6-d7",
                 "annotations": {
                   "comment": "[%eval +0.89]"
                 },
@@ -188,6 +205,7 @@
                 "san": "a4",
                 "move_number": 9,
                 "color": "w",
+                "lan": "a2-a4",
                 "annotations": {
                   "comment": "[%eval +0.83]",
                   "eval": "+0.83"
@@ -198,6 +216,7 @@
                 "san": "Na6",
                 "move_number": 9,
                 "color": "b",
+                "lan": "b8-a6",
                 "annotations": {
                   "comment": "[%eval +0.88]",
                   "eval": "+0.88"
@@ -210,6 +229,7 @@
                         "san": "O-O",
                         "move_number": 9,
                         "color": "b",
+                        "lan": "e8-g8",
                         "annotations": {
                           "comment": "[%eval +0.99]"
                         },
@@ -219,6 +239,7 @@
                         "san": "Nf3",
                         "move_number": 10,
                         "color": "w",
+                        "lan": "g1-f3",
                         "annotations": {
                           "comment": "[%eval +0.87]",
                           "eval": "+0.87"
@@ -229,6 +250,7 @@
                         "san": "Na6",
                         "move_number": 10,
                         "color": "b",
+                        "lan": "b8-a6",
                         "annotations": {
                           "comment": "[%eval +0.91]",
                           "eval": "+0.91"
@@ -243,6 +265,7 @@
                 "san": "Nf3",
                 "move_number": 10,
                 "color": "w",
+                "lan": "g1-f3",
                 "annotations": {
                   "comment": "[%eval +0.91]",
                   "eval": "+0.91"
@@ -253,6 +276,7 @@
                 "san": "Nb4",
                 "move_number": 10,
                 "color": "b",
+                "lan": "a6-b4",
                 "annotations": {
                   "comment": "[%eval +0.85]",
                   "eval": "+0.85"
@@ -267,6 +291,7 @@
         "san": "e5",
         "move_number": 9,
         "color": "w",
+        "lan": "e4-e5",
         "annotations": {},
         "variations": []
       },
@@ -274,6 +299,7 @@
         "san": "dxe5",
         "move_number": 9,
         "color": "b",
+        "lan": "d6-e5",
         "annotations": {},
         "variations": []
       },
@@ -281,6 +307,7 @@
         "san": "fxe5",
         "move_number": 10,
         "color": "w",
+        "lan": "f4-e5",
         "annotations": {},
         "variations": []
       },
@@ -288,6 +315,7 @@
         "san": "Nxd5",
         "move_number": 10,
         "color": "b",
+        "lan": "f6-d5",
         "annotations": {},
         "variations": []
       },
@@ -295,6 +323,7 @@
         "san": "Qxd5",
         "move_number": 11,
         "color": "w",
+        "lan": "d1-d5",
         "annotations": {},
         "variations": []
       },
@@ -302,6 +331,7 @@
         "san": "O-O",
         "move_number": 11,
         "color": "b",
+        "lan": "e8-g8",
         "annotations": {},
         "variations": []
       },
@@ -309,6 +339,7 @@
         "san": "Bxd7",
         "move_number": 12,
         "color": "w",
+        "lan": "b5-d7",
         "annotations": {},
         "variations": []
       },
@@ -316,6 +347,7 @@
         "san": "Bxd7",
         "move_number": 12,
         "color": "b",
+        "lan": "c8-d7",
         "annotations": {},
         "variations": []
       },
@@ -323,6 +355,7 @@
         "san": "Nf3",
         "move_number": 13,
         "color": "w",
+        "lan": "g1-f3",
         "annotations": {},
         "variations": []
       },
@@ -330,6 +363,7 @@
         "san": "Bc6",
         "move_number": 13,
         "color": "b",
+        "lan": "d7-c6",
         "annotations": {},
         "variations": []
       },
@@ -337,6 +371,7 @@
         "san": "Qxd8",
         "move_number": 14,
         "color": "w",
+        "lan": "d5-d8",
         "annotations": {},
         "variations": []
       },
@@ -344,6 +379,7 @@
         "san": "Raxd8",
         "move_number": 14,
         "color": "b",
+        "lan": "a8-d8",
         "annotations": {},
         "variations": []
       },
@@ -351,6 +387,7 @@
         "san": "Bg5",
         "move_number": 15,
         "color": "w",
+        "lan": "c1-g5",
         "annotations": {},
         "variations": []
       }
@@ -375,6 +412,7 @@
         "san": "d4",
         "move_number": 1,
         "color": "w",
+        "lan": "d2-d4",
         "annotations": {},
         "variations": []
       },
@@ -382,6 +420,7 @@
         "san": "Nf6",
         "move_number": 1,
         "color": "b",
+        "lan": "g8-f6",
         "annotations": {},
         "variations": []
       },
@@ -389,6 +428,7 @@
         "san": "c4",
         "move_number": 2,
         "color": "w",
+        "lan": "c2-c4",
         "annotations": {},
         "variations": []
       },
@@ -396,6 +436,7 @@
         "san": "c5",
         "move_number": 2,
         "color": "b",
+        "lan": "c7-c5",
         "annotations": {},
         "variations": []
       },
@@ -403,6 +444,7 @@
         "san": "d5",
         "move_number": 3,
         "color": "w",
+        "lan": "d4-d5",
         "annotations": {},
         "variations": []
       },
@@ -410,6 +452,7 @@
         "san": "e6",
         "move_number": 3,
         "color": "b",
+        "lan": "e7-e6",
         "annotations": {},
         "variations": []
       },
@@ -417,6 +460,7 @@
         "san": "Nc3",
         "move_number": 4,
         "color": "w",
+        "lan": "b1-c3",
         "annotations": {},
         "variations": []
       },
@@ -424,6 +468,7 @@
         "san": "exd5",
         "move_number": 4,
         "color": "b",
+        "lan": "e6-d5",
         "annotations": {},
         "variations": []
       },
@@ -431,6 +476,7 @@
         "san": "cxd5",
         "move_number": 5,
         "color": "w",
+        "lan": "c4-d5",
         "annotations": {},
         "variations": []
       },
@@ -438,6 +484,7 @@
         "san": "d6",
         "move_number": 5,
         "color": "b",
+        "lan": "d7-d6",
         "annotations": {},
         "variations": []
       },
@@ -445,6 +492,7 @@
         "san": "e4",
         "move_number": 6,
         "color": "w",
+        "lan": "e2-e4",
         "annotations": {},
         "variations": []
       },
@@ -452,6 +500,7 @@
         "san": "g6",
         "move_number": 6,
         "color": "b",
+        "lan": "g7-g6",
         "annotations": {},
         "variations": []
       },
@@ -459,6 +508,7 @@
         "san": "f4",
         "move_number": 7,
         "color": "w",
+        "lan": "f2-f4",
         "annotations": {
           "comment": "[%clk 0:02:46.9]"
         },
@@ -468,6 +518,7 @@
         "san": "Bg7",
         "move_number": 7,
         "color": "b",
+        "lan": "f8-g7",
         "annotations": {
           "comment": "[%clk 0:02:57.3]"
         },
@@ -477,6 +528,7 @@
         "san": "Bb5+",
         "move_number": 8,
         "color": "w",
+        "lan": "f1-b5",
         "annotations": {
           "comment": "[%clk 0:02:44.8]"
         },
@@ -486,6 +538,7 @@
         "san": "Nbd7",
         "move_number": 8,
         "color": "b",
+        "lan": "b8-d7",
         "annotations": {
           "comment": "[%clk 0:02:54.5]"
         },
@@ -495,6 +548,7 @@
         "san": "e5",
         "move_number": 9,
         "color": "w",
+        "lan": "e4-e5",
         "annotations": {
           "comment": "[%clk 0:02:43.5]"
         },
@@ -504,6 +558,7 @@
         "san": "dxe5",
         "move_number": 9,
         "color": "b",
+        "lan": "d6-e5",
         "annotations": {
           "comment": "[%clk 0:02:45.5]"
         },
@@ -513,6 +568,7 @@
         "san": "fxe5",
         "move_number": 10,
         "color": "w",
+        "lan": "f4-e5",
         "annotations": {
           "comment": "[%clk 0:02:41.4]"
         },
@@ -522,6 +578,7 @@
         "san": "Nxd5",
         "move_number": 10,
         "color": "b",
+        "lan": "f6-d5",
         "annotations": {
           "comment": "[%clk 0:02:42.1]"
         },
@@ -531,6 +588,7 @@
         "san": "Qxd5",
         "move_number": 11,
         "color": "w",
+        "lan": "d1-d5",
         "annotations": {
           "comment": "[%clk 0:02:39.7]"
         },
@@ -540,6 +598,7 @@
         "san": "O-O",
         "move_number": 11,
         "color": "b",
+        "lan": "e8-g8",
         "annotations": {
           "comment": "[%clk 0:02:43]"
         },
@@ -549,6 +608,7 @@
         "san": "Bxd7",
         "move_number": 12,
         "color": "w",
+        "lan": "b5-d7",
         "annotations": {
           "comment": "[%clk 0:02:37.4]"
         },
@@ -558,6 +618,7 @@
         "san": "Bxd7",
         "move_number": 12,
         "color": "b",
+        "lan": "c8-d7",
         "annotations": {
           "comment": "[%clk 0:02:42.7]"
         },
@@ -567,6 +628,7 @@
         "san": "Nf3",
         "move_number": 13,
         "color": "w",
+        "lan": "g1-f3",
         "annotations": {
           "comment": "[%clk 0:02:34.2]"
         },
@@ -576,6 +638,7 @@
         "san": "Bc6",
         "move_number": 13,
         "color": "b",
+        "lan": "d7-c6",
         "annotations": {
           "comment": "[%clk 0:02:42.3]"
         },
@@ -585,6 +648,7 @@
         "san": "Qxd8",
         "move_number": 14,
         "color": "w",
+        "lan": "d5-d8",
         "annotations": {
           "comment": "[%clk 0:02:32.4]"
         },
@@ -594,6 +658,7 @@
         "san": "Raxd8",
         "move_number": 14,
         "color": "b",
+        "lan": "a8-d8",
         "annotations": {
           "comment": "[%clk 0:02:43.1]"
         },
@@ -603,6 +668,7 @@
         "san": "Bg5",
         "move_number": 15,
         "color": "w",
+        "lan": "c1-g5",
         "annotations": {
           "comment": "[%clk 0:02:30.7]"
         },
@@ -630,6 +696,7 @@
         "san": "d4",
         "move_number": 1,
         "color": "w",
+        "lan": "d2-d4",
         "annotations": {},
         "variations": []
       },
@@ -637,6 +704,7 @@
         "san": "Nf6",
         "move_number": 1,
         "color": "b",
+        "lan": "g8-f6",
         "annotations": {},
         "variations": []
       },
@@ -644,6 +712,7 @@
         "san": "c4",
         "move_number": 2,
         "color": "w",
+        "lan": "c2-c4",
         "annotations": {},
         "variations": []
       },
@@ -651,6 +720,7 @@
         "san": "c5",
         "move_number": 2,
         "color": "b",
+        "lan": "c7-c5",
         "annotations": {},
         "variations": []
       },
@@ -658,6 +728,7 @@
         "san": "d5",
         "move_number": 3,
         "color": "w",
+        "lan": "d4-d5",
         "annotations": {},
         "variations": []
       },
@@ -665,6 +736,7 @@
         "san": "e6",
         "move_number": 3,
         "color": "b",
+        "lan": "e7-e6",
         "annotations": {},
         "variations": []
       },
@@ -672,6 +744,7 @@
         "san": "Nc3",
         "move_number": 4,
         "color": "w",
+        "lan": "b1-c3",
         "annotations": {},
         "variations": []
       },
@@ -679,6 +752,7 @@
         "san": "exd5",
         "move_number": 4,
         "color": "b",
+        "lan": "e6-d5",
         "annotations": {},
         "variations": []
       },
@@ -686,6 +760,7 @@
         "san": "cxd5",
         "move_number": 5,
         "color": "w",
+        "lan": "c4-d5",
         "annotations": {},
         "variations": []
       },
@@ -693,6 +768,7 @@
         "san": "d6",
         "move_number": 5,
         "color": "b",
+        "lan": "d7-d6",
         "annotations": {},
         "variations": []
       },
@@ -700,6 +776,7 @@
         "san": "e4",
         "move_number": 6,
         "color": "w",
+        "lan": "e2-e4",
         "annotations": {},
         "variations": []
       },
@@ -707,6 +784,7 @@
         "san": "g6",
         "move_number": 6,
         "color": "b",
+        "lan": "g7-g6",
         "annotations": {},
         "variations": []
       },
@@ -714,6 +792,7 @@
         "san": "f4",
         "move_number": 7,
         "color": "w",
+        "lan": "f2-f4",
         "annotations": {
           "comment": "[%clk 0:00:49.1]"
         },
@@ -723,6 +802,7 @@
         "san": "Bg7",
         "move_number": 7,
         "color": "b",
+        "lan": "f8-g7",
         "annotations": {
           "comment": "[%clk 0:02:58.9]"
         },
@@ -732,6 +812,7 @@
         "san": "Bb5+",
         "move_number": 8,
         "color": "w",
+        "lan": "f1-b5",
         "annotations": {
           "comment": "[%clk 0:00:50.8]"
         },
@@ -741,6 +822,7 @@
         "san": "Kf8",
         "move_number": 8,
         "color": "b",
+        "lan": "e8-f8",
         "annotations": {
           "comment": "[%clk 0:02:57.8]"
         },
@@ -750,6 +832,7 @@
         "san": "e5",
         "move_number": 9,
         "color": "w",
+        "lan": "e4-e5",
         "annotations": {
           "comment": "[%clk 0:00:46.4]"
         },
@@ -759,6 +842,7 @@
         "san": "dxe5",
         "move_number": 9,
         "color": "b",
+        "lan": "d6-e5",
         "annotations": {
           "comment": "[%clk 0:02:57.3]"
         },
@@ -768,6 +852,7 @@
         "san": "fxe5",
         "move_number": 10,
         "color": "w",
+        "lan": "f4-e5",
         "annotations": {
           "comment": "[%clk 0:00:44.1]"
         },
@@ -777,6 +862,7 @@
         "san": "Ng4",
         "move_number": 10,
         "color": "b",
+        "lan": "f6-g4",
         "annotations": {
           "comment": "[%clk 0:02:58.1]"
         },
@@ -786,6 +872,7 @@
         "san": "e6",
         "move_number": 11,
         "color": "w",
+        "lan": "e5-e6",
         "annotations": {
           "comment": "[%clk 0:00:42.9]"
         },
@@ -795,6 +882,7 @@
         "san": "Nf6",
         "move_number": 11,
         "color": "b",
+        "lan": "g4-f6",
         "annotations": {
           "comment": "[%clk 0:02:55.8]"
         },
@@ -804,6 +892,7 @@
         "san": "Nh3",
         "move_number": 12,
         "color": "w",
+        "lan": "g1-h3",
         "annotations": {
           "comment": "[%clk 0:00:41.5]"
         },
@@ -813,6 +902,7 @@
         "san": "a6",
         "move_number": 12,
         "color": "b",
+        "lan": "a7-a6",
         "annotations": {
           "comment": "[%clk 0:02:52.9]"
         },
@@ -822,6 +912,7 @@
         "san": "Be2",
         "move_number": 13,
         "color": "w",
+        "lan": "b5-e2",
         "annotations": {
           "comment": "[%clk 0:00:43.3]"
         },
@@ -831,6 +922,7 @@
         "san": "fxe6",
         "move_number": 13,
         "color": "b",
+        "lan": "f7-e6",
         "annotations": {
           "comment": "[%clk 0:02:49.1]"
         },
@@ -840,6 +932,7 @@
         "san": "O-O",
         "move_number": 14,
         "color": "w",
+        "lan": "e1-g1",
         "annotations": {
           "comment": "[%clk 0:00:45]"
         },
@@ -849,6 +942,7 @@
         "san": "exd5",
         "move_number": 14,
         "color": "b",
+        "lan": "e6-d5",
         "annotations": {
           "comment": "[%clk 0:02:47.4]"
         },
@@ -858,6 +952,7 @@
         "san": "Nxd5",
         "move_number": 15,
         "color": "w",
+        "lan": "c3-d5",
         "annotations": {
           "comment": "[%clk 0:00:41]"
         },
@@ -867,6 +962,7 @@
         "san": "Be6",
         "move_number": 15,
         "color": "b",
+        "lan": "c8-e6",
         "annotations": {
           "comment": "[%clk 0:02:45.7]"
         },
@@ -876,6 +972,7 @@
         "san": "Nxf6",
         "move_number": 16,
         "color": "w",
+        "lan": "d5-f6",
         "annotations": {
           "comment": "[%clk 0:00:38.6]"
         },
@@ -885,6 +982,7 @@
         "san": "Qxd1",
         "move_number": 16,
         "color": "b",
+        "lan": "d8-d1",
         "annotations": {
           "comment": "[%clk 0:02:44.2]"
         },
@@ -894,6 +992,7 @@
         "san": "Bxd1",
         "move_number": 17,
         "color": "w",
+        "lan": "e2-d1",
         "annotations": {
           "comment": "[%clk 0:00:40.3]"
         },
@@ -903,6 +1002,7 @@
         "san": "Bxf6",
         "move_number": 17,
         "color": "b",
+        "lan": "g7-f6",
         "annotations": {
           "comment": "[%clk 0:02:44.2]"
         },
@@ -912,6 +1012,7 @@
         "san": "Rxf6+",
         "move_number": 18,
         "color": "w",
+        "lan": "f1-f6",
         "annotations": {
           "comment": "[%clk 0:00:37.4]"
         },
@@ -921,6 +1022,7 @@
         "san": "Ke7",
         "move_number": 18,
         "color": "b",
+        "lan": "f8-e7",
         "annotations": {
           "comment": "[%clk 0:02:45]"
         },
@@ -930,6 +1032,7 @@
         "san": "Bg5",
         "move_number": 19,
         "color": "w",
+        "lan": "c1-g5",
         "annotations": {
           "comment": "[%clk 0:00:31.3]"
         },
@@ -939,6 +1042,7 @@
         "san": "h6",
         "move_number": 19,
         "color": "b",
+        "lan": "h7-h6",
         "annotations": {
           "comment": "[%clk 0:02:44.9]"
         },
@@ -948,6 +1052,7 @@
         "san": "Nf4",
         "move_number": 20,
         "color": "w",
+        "lan": "h3-f4",
         "annotations": {
           "comment": "[%clk 0:00:33.1]"
         },
@@ -957,6 +1062,7 @@
         "san": "hxg5",
         "move_number": 20,
         "color": "b",
+        "lan": "h6-g5",
         "annotations": {
           "comment": "[%clk 0:02:44.6]"
         },
@@ -966,6 +1072,7 @@
         "san": "Rxe6+",
         "move_number": 21,
         "color": "w",
+        "lan": "f6-e6",
         "annotations": {
           "comment": "[%clk 0:00:34.9]"
         },
@@ -975,6 +1082,7 @@
         "san": "Kf7",
         "move_number": 21,
         "color": "b",
+        "lan": "e7-f7",
         "annotations": {
           "comment": "[%clk 0:02:44.2]"
         },
@@ -984,6 +1092,7 @@
         "san": "Bb3",
         "move_number": 22,
         "color": "w",
+        "lan": "d1-b3",
         "annotations": {
           "comment": "[%clk 0:00:33.2]"
         },
@@ -993,6 +1102,7 @@
         "san": "gxf4",
         "move_number": 22,
         "color": "b",
+        "lan": "g5-f4",
         "annotations": {
           "comment": "[%clk 0:02:42.7]"
         },
@@ -1002,6 +1112,7 @@
         "san": "Rxa6+",
         "move_number": 23,
         "color": "w",
+        "lan": "e6-a6",
         "annotations": {
           "comment": "[%clk 0:00:35]"
         },

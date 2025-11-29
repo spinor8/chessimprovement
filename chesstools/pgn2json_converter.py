@@ -67,6 +67,7 @@ def serialize_moves(node, include_fen=False):
                 "san": var_san,
                 "move_number": var_move_number,
                 "color": var_color,
+                "lan": f"{chess.square_name(var_move.from_square)}-{chess.square_name(var_move.to_square)}",
                 "annotations": var_annotations,
                 "variations": []
             }]
@@ -83,6 +84,7 @@ def serialize_moves(node, include_fen=False):
             "san": san,
             "move_number": move_number,
             "color": "w" if board.turn == chess.WHITE else "b",
+            "lan": f"{chess.square_name(move.from_square)}-{chess.square_name(move.to_square)}",
             "annotations": annotations,
             "variations": variations
         }

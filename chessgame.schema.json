@@ -51,7 +51,12 @@
       "properties": {
         "san": {
           "type": "string",
-          "description": "Standard Algebraic Notation of the move"
+          "description": "Standard Algebraic Notation of the move (e.g., 'e4', 'Nf3', 'O-O')"
+        },
+        "lan": {
+          "type": "string",
+          "pattern": "^[a-h][1-8]-[a-h][1-8]$",
+          "description": "Long Algebraic Notation (e.g., 'e2-e4', 'g1-f3')"
         },
         "move_number": {
           "type": "integer",
@@ -89,7 +94,7 @@
           }
         }
       },
-      "required": ["san", "move_number", "color"]
+      "required": ["san", "move_number", "color", "lan"]
     }
   }
 }

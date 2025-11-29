@@ -76,7 +76,12 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
       "properties": {
         "san": {
           "type": "string",
-          "description": "Move in Standard Algebraic Notation"
+          "description": "Move in Standard Algebraic Notation (e.g., 'e4', 'Nf3', 'O-O')"
+        },
+        "lan": {
+          "type": "string",
+          "pattern": "^[a-h][1-8]-[a-h][1-8]$",
+          "description": "Move in Long Algebraic Notation (e.g., 'e2-e4', 'g1-f3')"
         },
         "move_number": {
           "type": "integer",
@@ -119,7 +124,7 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
           }
         }
       },
-      "required": ["san", "move_number"]
+      "required": ["san", "move_number", "color", "lan"]
     }
   }
 }
@@ -145,6 +150,7 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
   "moves": [
     {
       "san": "d4",
+      "lan": "d2-d4",
       "move_number": 1,
       "color": "w",
       "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq d3 0 1",
@@ -159,6 +165,7 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
           "line": [
             {
               "san": "Nf6",
+              "lan": "g8-f6",
               "move_number": 1,
               "color": "b",
               "annotations": {
@@ -173,6 +180,7 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
     },
     {
       "san": "c4",
+      "lan": "c2-c4",
       "move_number": 2,
       "color": "w",
       "annotations": {},

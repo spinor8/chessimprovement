@@ -44,10 +44,17 @@ python -m pytest chesstools/test_pgn2json_converter.py -v
 ```json
 {
   "san": "e4",
+  "lan": "e2-e4",
   "move_number": 1,
   "color": "w",
   "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1",
   "annotations": {
+    "comment": "Opening move",
+    "eval": "+0.25"
+  },
+  "variations": [...]
+}
+```
     "comment": "Opening move",
     "eval": "+0.25"
   },

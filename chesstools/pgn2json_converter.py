@@ -193,7 +193,7 @@ def main(base_dir, mode="pgn2json", include_fen=False):
     elif mode == "json2pgn":
         for root, dirs, files in os.walk(base_dir):
             for file in files:
-                if file.lower().endswith(".json"):
+                if file.lower().endswith(".json") and not file.lower().endswith("schema.json"):
                     input_path = os.path.join(root, file)
                     output_path = os.path.join(root, file.replace(".json", "_converted.pgn"))
                     convert_json_to_pgn(input_path, output_path)

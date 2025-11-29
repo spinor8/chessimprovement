@@ -9,6 +9,7 @@
       "white": "Stockfish",
       "black": "SPN",
       "result": "1-0",
+      "orientation": "white",
       "time_control": "180+2"
     },
     "moves": [
@@ -17,8 +18,8 @@
         "move_number": 1,
         "color": "w",
         "annotations": {
-          "comment": "[%eval +0.25]",
-          "eval": "+0.25"
+          "comment": "[%eval +0.21]",
+          "eval": "+0.21"
         },
         "variations": []
       },
@@ -26,114 +27,55 @@
         "san": "Nf6",
         "move_number": 1,
         "color": "b",
-        "annotations": {},
+        "annotations": {
+          "comment": "[%eval +0.35]",
+          "eval": "+0.35"
+        },
         "variations": []
       },
       {
         "san": "c4",
         "move_number": 2,
         "color": "w",
-        "annotations": {},
+        "annotations": {
+          "comment": "[%eval +0.25]",
+          "eval": "+0.25"
+        },
         "variations": []
       },
       {
         "san": "c5",
         "move_number": 2,
         "color": "b",
-        "annotations": {},
+        "annotations": {
+          "comment": "[%eval +0.71]",
+          "eval": "+0.71"
+        },
         "variations": []
       },
       {
         "san": "d5",
         "move_number": 3,
         "color": "w",
-        "annotations": {},
+        "annotations": {
+          "comment": "[%eval +0.68]",
+          "eval": "+0.68"
+        },
         "variations": []
       },
       {
         "san": "e6",
         "move_number": 3,
         "color": "b",
-        "annotations": {},
+        "annotations": {
+          "comment": "[%eval +0.80]",
+          "eval": "+0.80"
+        },
         "variations": []
       },
       {
         "san": "Nc3",
         "move_number": 4,
-        "color": "w",
-        "annotations": {},
-        "variations": []
-      },
-      {
-        "san": "exd5",
-        "move_number": 4,
-        "color": "b",
-        "annotations": {
-          "comment": "[%eval +0.87]",
-          "eval": "+0.87"
-        },
-        "variations": []
-      },
-      {
-        "san": "cxd5",
-        "move_number": 5,
-        "color": "w",
-        "annotations": {
-          "comment": "[%eval +0.79]",
-          "eval": "+0.79"
-        },
-        "variations": []
-      },
-      {
-        "san": "d6",
-        "move_number": 5,
-        "color": "b",
-        "annotations": {
-          "comment": "[%eval +0.91] At this point, it's already +1.0 according to StockFish and +0.9 according to Leela.",
-          "eval": "+0.91"
-        },
-        "variations": []
-      },
-      {
-        "san": "e4",
-        "move_number": 6,
-        "color": "w",
-        "annotations": {
-          "comment": "[%eval +0.86]",
-          "eval": "+0.86"
-        },
-        "variations": []
-      },
-      {
-        "san": "g6",
-        "move_number": 6,
-        "color": "b",
-        "annotations": {
-          "comment": "[%eval +0.94]",
-          "eval": "+0.94"
-        },
-        "variations": []
-      },
-      {
-        "san": "f4",
-        "move_number": 7,
-        "color": "w",
-        "annotations": {
-          "comment": "[%eval +0.91]",
-          "eval": "+0.91"
-        },
-        "variations": []
-      },
-      {
-        "san": "Bg7",
-        "move_number": 7,
-        "color": "b",
-        "annotations": {},
-        "variations": []
-      },
-      {
-        "san": "Bb5+",
-        "move_number": 8,
         "color": "w",
         "annotations": {
           "comment": "[%eval +0.88]",
@@ -142,10 +84,93 @@
         "variations": []
       },
       {
+        "san": "exd5",
+        "move_number": 4,
+        "color": "b",
+        "annotations": {
+          "comment": "[%eval +0.80]",
+          "eval": "+0.80"
+        },
+        "variations": []
+      },
+      {
+        "san": "cxd5",
+        "move_number": 5,
+        "color": "w",
+        "annotations": {
+          "comment": "[%eval +0.82]",
+          "eval": "+0.82"
+        },
+        "variations": []
+      },
+      {
+        "san": "d6",
+        "move_number": 5,
+        "color": "b",
+        "annotations": {
+          "comment": "[%eval +0.86] At this point, it's already +1.0 according to StockFish and +0.9 according to Leela.",
+          "eval": "+0.86"
+        },
+        "variations": []
+      },
+      {
+        "san": "e4",
+        "move_number": 6,
+        "color": "w",
+        "annotations": {
+          "comment": "[%eval +0.84]",
+          "eval": "+0.84"
+        },
+        "variations": []
+      },
+      {
+        "san": "g6",
+        "move_number": 6,
+        "color": "b",
+        "annotations": {
+          "comment": "[%eval +0.87]",
+          "eval": "+0.87"
+        },
+        "variations": []
+      },
+      {
+        "san": "f4",
+        "move_number": 7,
+        "color": "w",
+        "annotations": {
+          "comment": "[%eval +0.89]",
+          "eval": "+0.89"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bg7",
+        "move_number": 7,
+        "color": "b",
+        "annotations": {
+          "comment": "[%eval +0.91]",
+          "eval": "+0.91"
+        },
+        "variations": []
+      },
+      {
+        "san": "Bb5+",
+        "move_number": 8,
+        "color": "w",
+        "annotations": {
+          "comment": "[%eval +0.92]",
+          "eval": "+0.92"
+        },
+        "variations": []
+      },
+      {
         "san": "Nbd7",
         "move_number": 8,
         "color": "b",
-        "annotations": {},
+        "annotations": {
+          "comment": "[%eval +1.84]",
+          "eval": "+1.84"
+        },
         "variations": [
           {
             "label": "",
@@ -155,7 +180,7 @@
                 "move_number": 8,
                 "color": "b",
                 "annotations": {
-                  "comment": "[%eval +0.92]"
+                  "comment": "[%eval +0.89]"
                 },
                 "variations": []
               },
@@ -164,8 +189,8 @@
                 "move_number": 9,
                 "color": "w",
                 "annotations": {
-                  "comment": "[%eval +0.89]",
-                  "eval": "+0.89"
+                  "comment": "[%eval +0.83]",
+                  "eval": "+0.83"
                 },
                 "variations": []
               },
@@ -173,14 +198,55 @@
                 "san": "Na6",
                 "move_number": 9,
                 "color": "b",
-                "annotations": {},
-                "variations": []
+                "annotations": {
+                  "comment": "[%eval +0.88]",
+                  "eval": "+0.88"
+                },
+                "variations": [
+                  {
+                    "label": "",
+                    "line": [
+                      {
+                        "san": "O-O",
+                        "move_number": 9,
+                        "color": "b",
+                        "annotations": {
+                          "comment": "[%eval +0.99]"
+                        },
+                        "variations": []
+                      },
+                      {
+                        "san": "Nf3",
+                        "move_number": 10,
+                        "color": "w",
+                        "annotations": {
+                          "comment": "[%eval +0.87]",
+                          "eval": "+0.87"
+                        },
+                        "variations": []
+                      },
+                      {
+                        "san": "Na6",
+                        "move_number": 10,
+                        "color": "b",
+                        "annotations": {
+                          "comment": "[%eval +0.91]",
+                          "eval": "+0.91"
+                        },
+                        "variations": []
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "san": "Nf3",
                 "move_number": 10,
                 "color": "w",
-                "annotations": {},
+                "annotations": {
+                  "comment": "[%eval +0.91]",
+                  "eval": "+0.91"
+                },
                 "variations": []
               },
               {
@@ -188,8 +254,8 @@
                 "move_number": 10,
                 "color": "b",
                 "annotations": {
-                  "comment": "[%eval +0.93]",
-                  "eval": "+0.93"
+                  "comment": "[%eval +0.85]",
+                  "eval": "+0.85"
                 },
                 "variations": []
               }

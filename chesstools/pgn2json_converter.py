@@ -1,8 +1,9 @@
 import os
 import json
 import chess.pgn
+from typing import Dict, List, Any, Optional, Union
 
-def serialize_game(game, include_fen=False):
+def serialize_game(game: chess.pgn.Game, include_fen: bool = False) -> Dict[str, Any]:
     # Build metadata from headers
     metadata = {}
     for tag in game.headers:
@@ -28,7 +29,7 @@ def serialize_game(game, include_fen=False):
         "notes": ""
     }
 
-def serialize_moves(node, include_fen=False):
+def serialize_moves(node: chess.pgn.GameNode, include_fen: bool = False) -> List[Dict[str, Any]]:
     moves = []
     current = node
     board = current.board()
@@ -101,7 +102,7 @@ def serialize_moves(node, include_fen=False):
 
     return moves
 
-def convert_pgn_to_json(input_file, output_file, include_fen=False):
+def convert_pgn_to_json(input_file: str, output_file: str, include_fen: bool = False) -> None:
     with open(input_file, "r", encoding="utf-8") as f:
         games = []
         while True:
@@ -123,7 +124,7 @@ def convert_pgn_to_json(input_file, output_file, include_fen=False):
 
     print(f"📄 JSON output written to {output_file}")
 
-def build_pgn_moves(moves_list):
+def build_pgn_moves(moves_list: List[Dict[str, Any]]) -> str:
     text = ""
     for move_obj in moves_list:
         san = move_obj["san"]
@@ -139,7 +140,7 @@ def build_pgn_moves(moves_list):
             text += f"( {build_pgn_moves(var['line'])} ) "
     return text.strip()
 
-def convert(file_path):
+def convert(file_path: str) -> None:
     """Wrapper function to convert a single file based on its extension.
     .pgn -> .json
     .json -> _converted.pgn
@@ -153,7 +154,7 @@ def convert(file_path):
     else:
         print(f"Unsupported file type: {file_path}")
 
-def validate_json_consistency(game_data):
+def validate_json_consistency(game_data: Dict[str, Any]) -> None:
     """Validate that SAN and LAN fields in the JSON correspond to the same moves."""
     board = chess.Board()
     moves = game_data.get("moves", [])
@@ -185,7 +186,7 @@ def validate_json_consistency(game_data):
         
         # Note: Skipping validation of variations as they may contain non-standard SAN from PGN
 
-def validate_variation_consistency(var_moves, board):
+def validate_variation_consistency(var_moves: List[Dict[str, Any]], board: chess.Board) -> None:
     """Validate consistency in a variation line."""
     for move_obj in var_moves:
         san = move_obj.get("san")
@@ -208,7 +209,7 @@ def validate_variation_consistency(var_moves, board):
         
         board.push(lan_move)
 
-def convert_json_to_pgn(input_file, output_file):
+def convert_json_to_pgn(input_file: str, output_file: str) -> None:
     with open(input_file, "r", encoding="utf-8") as f:
         json_data = json.load(f)
 
@@ -243,7 +244,7 @@ def convert_json_to_pgn(input_file, output_file):
 
     print(f"📄 PGN output written to {output_file}")
 
-def main(base_dir, mode="pgn2json", include_fen=False):
+def main(base_dir: str, mode: str = "pgn2json", include_fen: bool = False) -> None:
     if mode == "pgn2json":
         for root, dirs, files in os.walk(base_dir):
             for file in files:

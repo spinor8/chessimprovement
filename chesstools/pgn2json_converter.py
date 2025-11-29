@@ -67,7 +67,7 @@ def serialize_moves(node, include_fen=False):
                 "san": var_san,
                 "move_number": var_move_number,
                 "color": var_color,
-                "lan": f"{chess.square_name(var_move.from_square)}-{chess.square_name(var_move.to_square)}",
+                "lan": var_move.uci(),
                 "annotations": var_annotations,
                 "variations": []
             }]
@@ -84,7 +84,7 @@ def serialize_moves(node, include_fen=False):
             "san": san,
             "move_number": move_number,
             "color": "w" if board.turn == chess.WHITE else "b",
-            "lan": f"{chess.square_name(move.from_square)}-{chess.square_name(move.to_square)}",
+            "lan": move.uci(),
             "annotations": annotations,
             "variations": variations
         }
@@ -153,12 +153,71 @@ def convert(file_path):
     else:
         print(f"Unsupported file type: {file_path}")
 
+def validate_json_consistency(game_data):
+    """Validate that SAN and LAN fields in the JSON correspond to the same moves."""
+    board = chess.Board()
+    moves = game_data.get("moves", [])
+    
+    for move_obj in moves:
+        san = move_obj.get("san")
+        lan = move_obj.get("lan")
+        if not san or not lan:
+            raise ValueError(f"Missing SAN or LAN for move: {move_obj}")
+        
+        # Parse LAN to get the move
+        try:
+            lan_move = chess.Move.from_uci(lan)
+        except ValueError as e:
+            raise ValueError(f"Invalid LAN '{lan}': {e}")
+        
+        # Generate SAN from the LAN move on the current board
+        try:
+            generated_san = board.san(lan_move)
+        except Exception as e:
+            raise ValueError(f"Cannot generate SAN for LAN '{lan}' on board {board.fen()}: {e}")
+        
+        # Check if they match (case insensitive, as SAN can vary)
+        if generated_san.lower() != san.lower():
+            raise ValueError(f"SAN '{san}' does not match generated SAN '{generated_san}' for LAN '{lan}' on board {board.fen()}")
+        
+        # Apply the move to the board
+        board.push(lan_move)
+        
+        # Note: Skipping validation of variations as they may contain non-standard SAN from PGN
+
+def validate_variation_consistency(var_moves, board):
+    """Validate consistency in a variation line."""
+    for move_obj in var_moves:
+        san = move_obj.get("san")
+        lan = move_obj.get("lan")
+        if not san or not lan:
+            raise ValueError(f"Missing SAN or LAN in variation: {move_obj}")
+        
+        try:
+            lan_move = chess.Move.from_uci(lan)
+        except ValueError as e:
+            raise ValueError(f"Invalid LAN '{lan}' in variation: {e}")
+        
+        try:
+            generated_san = board.san(lan_move)
+        except Exception as e:
+            raise ValueError(f"Cannot generate SAN for LAN '{lan}' in variation on board {board.fen()}: {e}")
+        
+        if generated_san.lower() != san.lower():
+            raise ValueError(f"SAN '{san}' does not match generated SAN '{generated_san}' for LAN '{lan}' in variation on board {board.fen()}")
+        
+        board.push(lan_move)
+
 def convert_json_to_pgn(input_file, output_file):
     with open(input_file, "r", encoding="utf-8") as f:
         json_data = json.load(f)
 
     if not isinstance(json_data, list):
         json_data = [json_data]  # Handle single game
+
+    # Validate consistency before processing
+    for game_data in json_data:
+        validate_json_consistency(game_data)
 
     with open(output_file, "w", encoding="utf-8") as out:
         for game_data in json_data:

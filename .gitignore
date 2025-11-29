@@ -1,2 +1,15 @@
+# Ignore generated PGN files
+*_converted.pgn
+*_formatted.pgn
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Testing
+.pytest_cache/
+
 # Ignore PGN files
 *.pgn

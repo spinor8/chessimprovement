@@ -2,7 +2,7 @@ import os
 import json
 import chess.pgn
 
-def serialize_game(game):
+def serialize_game(game, include_fen=False):
     # Build metadata from headers
     metadata = {}
     for tag in game.headers:
@@ -19,7 +19,7 @@ def serialize_game(game):
     game_id = f"{event}_{date}".replace(" ", "_").replace("/", "_")
 
     # Serialize moves
-    moves = serialize_moves(game)
+    moves = serialize_moves(game, include_fen)
 
     return {
         "game_id": game_id,
@@ -28,7 +28,7 @@ def serialize_game(game):
         "notes": ""
     }
 
-def serialize_moves(node):
+def serialize_moves(node, include_fen=False):
     moves = []
     current = node
     board = current.board()
@@ -70,8 +70,12 @@ def serialize_moves(node):
                 "annotations": var_annotations,
                 "variations": []
             }]
+            if include_fen:
+                var_board.push(var_move)
+                var_moves[0]["fen"] = var_board.fen()
+                var_board.pop()
             var_board.push(var_move)
-            rest_moves = serialize_moves(var_node)
+            rest_moves = serialize_moves(var_node, include_fen)
             var_moves.extend(rest_moves)
             variations.append({"label": "", "line": var_moves})
 
@@ -82,15 +86,20 @@ def serialize_moves(node):
             "annotations": annotations,
             "variations": variations
         }
+
+        # Add FEN after the move
+        board.push(move)
+        if include_fen:
+            move_obj["fen"] = board.fen()
+
         moves.append(move_obj)
 
         # Move to next
-        board.push(move)
         current = child
 
     return moves
 
-def convert_pgn_to_json(input_file, output_file):
+def convert_pgn_to_json(input_file, output_file, include_fen=False):
     with open(input_file, "r", encoding="utf-8") as f:
         games = []
         while True:
@@ -105,7 +114,7 @@ def convert_pgn_to_json(input_file, output_file):
 
     print(f"✅ {len(games)} valid games parsed from {input_file}")
 
-    json_data = [serialize_game(game) for game in games]
+    json_data = [serialize_game(game, include_fen) for game in games]
 
     with open(output_file, "w", encoding="utf-8") as out:
         json.dump(json_data, out, indent=2)
@@ -173,14 +182,14 @@ def convert_json_to_pgn(input_file, output_file):
 
     print(f"📄 PGN output written to {output_file}")
 
-def main(base_dir, mode="pgn2json"):
+def main(base_dir, mode="pgn2json", include_fen=False):
     if mode == "pgn2json":
         for root, dirs, files in os.walk(base_dir):
             for file in files:
                 if file.lower().endswith(".pgn") and not file.lower().endswith("_formatted.pgn") and not file.lower().endswith("_converted.pgn"):
                     input_path = os.path.join(root, file)
                     output_path = os.path.join(root, file.replace(".pgn", ".json"))
-                    convert_pgn_to_json(input_path, output_path)
+                    convert_pgn_to_json(input_path, output_path, include_fen)
     elif mode == "json2pgn":
         for root, dirs, files in os.walk(base_dir):
             for file in files:
@@ -190,6 +199,16 @@ def main(base_dir, mode="pgn2json"):
                     convert_json_to_pgn(input_path, output_path)
 
 if __name__ == "__main__":
+    import sys
     mode = 'pgn2json'
+    include_fen = False
+
+    if len(sys.argv) > 1:
+        if '--include-fen' in sys.argv:
+            include_fen = True
+            sys.argv.remove('--include-fen')
+        if len(sys.argv) > 1:
+            mode = sys.argv[1]
+
     base_location = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    main(base_location, mode)
+    main(base_location, mode, include_fen)

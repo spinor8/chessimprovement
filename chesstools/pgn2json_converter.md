@@ -87,6 +87,10 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
           "description": "Color of the player making the move",
           "enum": ["w", "b"]
         },
+        "fen": {
+          "type": "string",
+          "description": "FEN representation of the board position after this move (optional)"
+        },
         "annotations": {
           "type": "object",
           "description": "Annotations for the move",
@@ -143,6 +147,7 @@ PGN remains useful for **interoperability** (import/export into GUIs), but JSON 
       "san": "d4",
       "move_number": 1,
       "color": "w",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq d3 0 1",
       "annotations": {
         "comment": "Main line",
         "eval": "+0.20",
@@ -199,32 +204,34 @@ The `pgn2json_converter.py` script provides bidirectional conversion between PGN
 
 ### 6.1 Core Functions
 
-#### `serialize_game(game)`
+#### `serialize_game(game, include_fen=False)`
 Converts a chess.pgn.Game object to the JSON schema format.
-- **Input**: `chess.pgn.Game` object
+- **Input**: `chess.pgn.Game` object, optional `include_fen` boolean
 - **Output**: Dictionary with `game_id`, `metadata`, `moves`, and `notes`
 - **Process**:
   - Extracts PGN headers into `metadata`, mapping "TimeControl" to "time_control"
   - Generates `game_id` from event and date
   - Calls `serialize_moves()` to build the move tree
+  - If `include_fen=True`, adds FEN strings to each move
 
-#### `serialize_moves(node)`
+#### `serialize_moves(node, include_fen=False)`
 Recursively serializes the move tree from a PGN game node.
-- **Input**: `chess.pgn.GameNode` object
+- **Input**: `chess.pgn.GameNode` object, optional `include_fen` boolean
 - **Output**: List of move dictionaries
 - **Features**:
   - Handles mainline moves and variations
   - Extracts comments and parses engine evaluations (`[%eval ...]`)
   - Assigns move numbers and colors ("w" or "b")
   - Recursively processes nested variations
+  - If `include_fen=True`, generates FEN after each move
 
-#### `convert_pgn_to_json(input_file, output_file)`
+#### `convert_pgn_to_json(input_file, output_file, include_fen=False)`
 Converts a PGN file to JSON format.
-- **Input**: Path to PGN file
+- **Input**: Path to PGN file, optional `include_fen` boolean
 - **Output**: Path to JSON file
 - **Process**:
   - Parses all games in the PGN file using `chess.pgn.read_game()`
-  - Serializes each game using `serialize_game()`
+  - Serializes each game using `serialize_game()` with FEN option
   - Writes formatted JSON with 2-space indentation
 
 #### `build_pgn_moves(moves_list)`
@@ -254,7 +261,7 @@ Convenience function for single-file conversion.
 
 ### 6.2 Batch Processing
 
-#### `main(base_dir, mode)`
+#### `main(base_dir, mode, include_fen)`
 Processes all files in a directory tree.
 - **Modes**:
   - `"pgn2json"`: Converts all `.pgn` files to `.json` (default)
@@ -263,6 +270,7 @@ Processes all files in a directory tree.
   - Recursively walks directory structure
   - Skips already processed files (containing "_formatted" or "_converted")
   - Outputs progress messages
+  - If `include_fen=True`, adds FEN positions to JSON output
 
 ### 6.3 Usage Examples
 
@@ -277,14 +285,25 @@ convert("path/to/game.pgn")  # Creates game.json
 convert("path/to/game.json")  # Creates game_converted.pgn
 ```
 
+#### Convert PGN to JSON with FEN positions:
+```python
+from pgn2json_converter import convert_pgn_to_json
+convert_pgn_to_json("game.pgn", "game.json", include_fen=True)
+```
+
 #### Batch convert all PGN files in directory:
 ```bash
 python pgn2json_converter.py  # Runs in pgn2json mode by default
 ```
 
+#### Batch convert with FEN positions included:
+```bash
+python pgn2json_converter.py --include-fen
+```
+
 #### Batch convert all JSON files to PGN:
 ```bash
-python json2pgn_converter.py  # Uses json2pgn mode
+python pgn2json_converter.py json2pgn
 ```
 
 ### 6.4 Dependencies
@@ -348,13 +367,21 @@ The test suite (`test_pgn2json_converter.py`) verifies:
 - **Move accuracy**: All moves, variations, and annotations preserved
 - **Header integrity**: Metadata correctly mapped and restored
 - **Parser compatibility**: Output compatible with `chess.pgn` library
+- **FEN inclusion**: Optional FEN position tracking works correctly
+- **FEN validation**: Generated FEN strings are valid chess positions
 
-#### Test Function
+#### Test Functions
 
 `test_round_trip_conversion()`:
 - Creates a sample PGN string with comments, variations, and evaluations
 - Converts PGN to JSON, then JSON back to PGN
 - Parses both versions and compares using `chess.pgn.StringExporter`
 - Ensures structural equivalence and annotation preservation
+
+`test_fen_inclusion()`:
+- Tests FEN field generation when `include_fen=True`
+- Validates FEN strings represent correct board positions
+- Verifies FEN fields are absent when `include_fen=False`
+- Ensures FEN positions match actual game state after each move
 
 Run tests after any code changes to maintain conversion fidelity.

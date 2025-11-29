@@ -1,5 +1,5 @@
 
-# 🥐 Using En Croissant for Chess Training Training
+# 🥐 Chess Training with En Croissant + JSON Tools
 
 ## 1. Launch En Croissant
 - Open the **En Croissant** application on your system.
@@ -16,32 +16,26 @@
 
 ---
 
-## 3. Configure the Engine
-- Select the engine you want to play against (e.g., Stockfish).
-- Choose **15 minutes per side** as the time control:
-  - Navigate to **Game Settings → Time Control**.
-  - Set **15:00** for both White and Black.
-- Adjust difficulty if needed (engine strength slider or depth settings).
-
----
-
-## 4. Play the Game
-- Start the game from the Modern Benoni setup.
-- Play your moves against the engine.
-- The clock will run with the 15‑minute control.
+## 3. Play the Game
+- Click on the eye in repertoire view.
+- Go to the position in question by clicking on the move in the right panel.
+- In the left panel, there is a archery target. Click on that to play from here.
+- Choose the engine and time control. Then start game.
 
 ---
 
 ## 5. Save the Game
-- After the game ends, go to **File → Save Game**.
-- Save in **PGN format** (Portable Game Notation).
-  - Example filename: `Benoni_Training_2025-11-28.pgn`
-- Store all PGNs in a dedicated folder (e.g., `~/Chess/BenoniTraining/`).
+- When one gives up, go to Info and copy the full PGN.
+- Edit accordingly into the appropriate PGN file.
 
 ---
 
 ## 6. Future Analysis & Annotation
 - Open saved PGNs in En Croissant or another database tool (ChessBase, SCID, ChessX).
+- **Alternative: Convert to JSON format** for advanced analysis:
+  ```bash
+  python chesstools/pgn2json_converter.py --include-fen
+  ```
 - Use **annotation tools**:
   - Add comments to moves.
   - Insert variation trees.
@@ -56,6 +50,19 @@
 3. Configure engine with **15 min per side**.  
 4. Play the game.  
 5. Save PGN after each session.  
-6. Annotate later in your preferred database tool.  
+6. **Convert to JSON** for structured storage: `python chesstools/pgn2json_converter.py --include-fen`
+7. Annotate later in your preferred database tool.  
+
+---
+
+## 🔄 JSON Alternative Workflow
+
+For more advanced analysis with unlimited variations and position tracking:
+
+1. **Convert PGN to JSON**: `python chesstools/pgn2json_converter.py --include-fen`
+2. **Edit JSON files** with your analysis and engine evaluations
+3. **Validate** against schema: JSON files are automatically validated
+4. **Store in Git** for version control of annotations
+5. **Future**: Build custom viewers that support the full JSON feature set  
 
 

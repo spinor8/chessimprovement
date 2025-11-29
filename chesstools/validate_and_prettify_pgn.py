@@ -2,9 +2,10 @@ import os
 import chess.pgn
 import re
 from chess.pgn import StringExporter
+from typing import Match
 
-def indent_variations(text):
-    def indent_match(match):
+def indent_variations(text: str) -> str:
+    def indent_match(match: Match[str]) -> str:
         content = match.group(1).strip()
         # Recursively indent nested variations
         content = re.sub(r'\((.*?)\)', indent_match, content, flags=re.DOTALL)
@@ -14,7 +15,7 @@ def indent_variations(text):
         return f'(\n{indented}\n)'
     return re.sub(r'\((.*?)\)', indent_match, text, flags=re.DOTALL)
 
-def validate_and_reformat_pgn(input_file, output_file):
+def validate_and_reformat_pgn(input_file: str, output_file: str) -> None:
     with open(input_file, "r", encoding="utf-8") as f:
         games = []
         while True:
@@ -60,7 +61,7 @@ def validate_and_reformat_pgn(input_file, output_file):
     print(f"📂 Reformatted PGN written to {output_file}")
 
 
-def main(base_dir):
+def main(base_dir: str) -> None:
     for root, dirs, files in os.walk(base_dir):
         for file in files:
             if file.lower().endswith(".pgn") and not file.lower().endswith("_formatted.pgn"):

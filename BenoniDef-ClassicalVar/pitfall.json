@@ -1,11 +1,11 @@
 [
   {
-    "game_id": "Training_EC_2025.11.29_unknown_Stockfish_vs_SPN",
+    "game_id": "Training_EC_2025.11.29_4_Stockfish_vs_SPN",
     "metadata": {
       "event": "Training",
       "site": "EC",
       "date": "2025.11.29",
-      "round": "?",
+      "round": "4",
       "white": "Stockfish",
       "black": "SPN",
       "result": "1-0",

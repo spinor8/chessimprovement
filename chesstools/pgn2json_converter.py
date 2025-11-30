@@ -16,8 +16,12 @@ def serialize_game(game: chess.pgn.Game, include_fen: bool = False) -> Dict[str,
 
     # Generate game_id
     event = metadata.get("event", "unknown")
+    site = metadata.get("site", "unknown")
     date = metadata.get("date", "unknown")
-    game_id = f"{event}_{date}".replace(" ", "_").replace("/", "_")
+    round_ = metadata.get("round", "unknown")
+    white = metadata.get("white", "unknown")
+    black = metadata.get("black", "unknown")
+    game_id = f"{event}_{site}_{date}_{round_}_{white}_vs_{black}".replace(" ", "_").replace("/", "_").replace("?", "unknown")
 
     # Serialize moves
     moves = serialize_moves(game, include_fen)

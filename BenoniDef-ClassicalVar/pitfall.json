@@ -1,6 +1,6 @@
 [
   {
-    "game_id": "Training_2025.11.29",
+    "game_id": "Training_EC_2025.11.29_unknown_Stockfish_vs_SPN",
     "metadata": {
       "event": "Training",
       "site": "EC",
@@ -17,7 +17,7 @@
         "san": "d4",
         "move_number": 1,
         "color": "w",
-        "lan": "d2-d4",
+        "lan": "d2d4",
         "annotations": {
           "comment": "[%clk 0:02:47.4]"
         },
@@ -27,7 +27,7 @@
         "san": "g6",
         "move_number": 1,
         "color": "b",
-        "lan": "g7-g6",
+        "lan": "g7g6",
         "annotations": {
           "comment": "[%clk 0:02:49.9]"
         },
@@ -37,7 +37,7 @@
         "san": "e4",
         "move_number": 2,
         "color": "w",
-        "lan": "e2-e4",
+        "lan": "e2e4",
         "annotations": {
           "comment": "[%clk 0:02:46.3]"
         },
@@ -47,7 +47,7 @@
         "san": "c5",
         "move_number": 2,
         "color": "b",
-        "lan": "c7-c5",
+        "lan": "c7c5",
         "annotations": {
           "comment": "[%clk 0:02:50.7]"
         },
@@ -57,7 +57,7 @@
         "san": "dxc5",
         "move_number": 3,
         "color": "w",
-        "lan": "d4-c5",
+        "lan": "d4c5",
         "annotations": {
           "comment": "[%clk 0:02:45.2]"
         },
@@ -67,7 +67,7 @@
         "san": "Bg7",
         "move_number": 3,
         "color": "b",
-        "lan": "f8-g7",
+        "lan": "f8g7",
         "annotations": {
           "comment": "[%clk 0:02:50.4]"
         },
@@ -77,7 +77,7 @@
         "san": "Nc3",
         "move_number": 4,
         "color": "w",
-        "lan": "b1-c3",
+        "lan": "b1c3",
         "annotations": {
           "comment": "[%clk 0:02:42.7]"
         },
@@ -87,7 +87,7 @@
         "san": "Qa5",
         "move_number": 4,
         "color": "b",
-        "lan": "d8-a5",
+        "lan": "d8a5",
         "annotations": {
           "comment": "[%clk 0:02:49.8]"
         },
@@ -97,7 +97,7 @@
         "san": "Bd2",
         "move_number": 5,
         "color": "w",
-        "lan": "c1-d2",
+        "lan": "c1d2",
         "annotations": {
           "comment": "[%clk 0:02:30.6]"
         },
@@ -107,7 +107,7 @@
         "san": "Qxc5",
         "move_number": 5,
         "color": "b",
-        "lan": "a5-c5",
+        "lan": "a5c5",
         "annotations": {
           "comment": "[%clk 0:02:49.7]"
         },
@@ -117,7 +117,7 @@
         "san": "Nd5",
         "move_number": 6,
         "color": "w",
-        "lan": "c3-d5",
+        "lan": "c3d5",
         "annotations": {
           "comment": "[%clk 0:02:29.1]"
         },
@@ -127,7 +127,7 @@
         "san": "e6",
         "move_number": 6,
         "color": "b",
-        "lan": "e7-e6",
+        "lan": "e7e6",
         "annotations": {
           "comment": "[%clk 0:02:42.5]"
         },
@@ -137,7 +137,7 @@
         "san": "Bb4",
         "move_number": 7,
         "color": "w",
-        "lan": "d2-b4",
+        "lan": "d2b4",
         "annotations": {
           "comment": "[%clk 0:02:28.1]"
         },
@@ -147,7 +147,7 @@
         "san": "Qc6",
         "move_number": 7,
         "color": "b",
-        "lan": "c5-c6",
+        "lan": "c5c6",
         "annotations": {
           "comment": "[%clk 0:02:36.6]"
         },
@@ -157,7 +157,7 @@
         "san": "Bb5",
         "move_number": 8,
         "color": "w",
-        "lan": "f1-b5",
+        "lan": "f1b5",
         "annotations": {
           "comment": "[%clk 0:02:26.8]"
         },
@@ -167,7 +167,7 @@
         "san": "Qxb5",
         "move_number": 8,
         "color": "b",
-        "lan": "c6-b5",
+        "lan": "c6b5",
         "annotations": {
           "comment": "[%clk 0:02:32.1]"
         },
@@ -177,7 +177,7 @@
         "san": "Nc7+",
         "move_number": 9,
         "color": "w",
-        "lan": "d5-c7",
+        "lan": "d5c7",
         "annotations": {
           "comment": "[%clk 0:02:25.7]"
         },
@@ -187,7 +187,7 @@
         "san": "Kd8",
         "move_number": 9,
         "color": "b",
-        "lan": "e8-d8",
+        "lan": "e8d8",
         "annotations": {
           "comment": "[%clk 0:02:32.8]"
         },
@@ -197,7 +197,7 @@
         "san": "Nxb5",
         "move_number": 10,
         "color": "w",
-        "lan": "c7-b5",
+        "lan": "c7b5",
         "annotations": {
           "comment": "[%clk 0:02:24.4]"
         },

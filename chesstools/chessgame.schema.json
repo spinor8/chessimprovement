@@ -2,14 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.com/chess-game.schema.json",
   "title": "Chess Game JSON Schema",
-  "description": "Schema for chess games with moves, variations, and analysis",
+  "description": "Schema for chess games with moves, variations, and analysis. Game IDs must be unique across the array.",
   "type": "array",
+  "uniqueItems": true,
   "items": {
     "type": "object",
     "properties": {
       "game_id": {
         "type": "string",
-        "description": "Unique identifier for the game"
+        "description": "Unique identifier for the game, must be unique across all games in the array"
       },
       "metadata": {
         "type": "object",

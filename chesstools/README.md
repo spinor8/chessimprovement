@@ -40,6 +40,9 @@ python -m pytest chesstools/test_pgn2json_converter.py -v
 
 ## 📊 JSON Schema Features
 
+### Game ID Uniqueness
+Game IDs are generated from PGN metadata fields (`event`, `site`, `date`, `round`, `white`, `black`) and **must be unique** across all games in a JSON array. This ensures reliable identification and prevents conflicts when merging or processing multiple games.
+
 ### Move Object Structure
 ```json
 {
